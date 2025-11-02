@@ -88,6 +88,8 @@ from statement_classifier.types import (
 )
 
 from statement_classifier.providers import RuleProvider
+from statement_classifier.engine import ClassificationEngine
+from statement_classifier.providers.file import FileRuleProvider
 
 __all__ = [
     # Types - primitives and results
@@ -105,4 +107,8 @@ __all__ = [
 
     # Interfaces - abstractions
     'RuleProvider',
+
+    # Implementations - core engine and file provider
+    'ClassificationEngine',
+    'FileRuleProvider',
 ]
