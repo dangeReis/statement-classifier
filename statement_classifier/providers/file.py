@@ -16,6 +16,7 @@ from statement_classifier.types import (
     RuleFormatException,
 )
 from statement_classifier.providers.base import RuleProvider
+from statement_classifier.normalization import RuleNormalizer
 
 
 class FileRuleProvider(RuleProvider):
@@ -122,7 +123,9 @@ class FileRuleProvider(RuleProvider):
         """
         try:
             rules_data = self.load_rules()
-            rules = rules_data.get('rules', [])
+            # Normalize v3 to v4 format if needed
+            normalized_data = RuleNormalizer.normalize(rules_data)
+            rules = normalized_data.get('rules', [])
 
             for rule in rules:
                 if rule.get('id') == rule_id:
@@ -143,7 +146,9 @@ class FileRuleProvider(RuleProvider):
 
         try:
             rules_data = self.load_rules()
-            rules = rules_data.get('rules', [])
+            # Normalize v3 to v4 format if needed
+            normalized_data = RuleNormalizer.normalize(rules_data)
+            rules = normalized_data.get('rules', [])
 
             # Basic structure validation
             if not isinstance(rules, list):
@@ -208,10 +213,12 @@ class FileRuleProvider(RuleProvider):
         """
         try:
             rules_data = self.load_rules()
-            rules = rules_data.get('rules', [])
+            # Normalize v3 to v4 format if needed
+            normalized_data = RuleNormalizer.normalize(rules_data)
+            rules = normalized_data.get('rules', [])
 
             return {
-                'version': rules_data.get('version', '4.0'),
+                'version': normalized_data.get('version', '4.0'),
                 'rule_count': len(rules),
                 'v4_path': str(self.v4_path),
                 'v3_path': str(self.v3_path),
