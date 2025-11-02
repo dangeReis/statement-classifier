@@ -90,6 +90,8 @@ from statement_classifier.types import (
 from statement_classifier.providers import RuleProvider
 from statement_classifier.engine import ClassificationEngine
 from statement_classifier.providers.file import FileRuleProvider
+from statement_classifier.logging import Logger
+from statement_classifier.coordinator import RuleUpdateOrchestrator
 
 __all__ = [
     # Types - primitives and results
@@ -111,4 +113,8 @@ __all__ = [
     # Implementations - core engine and file provider
     'ClassificationEngine',
     'FileRuleProvider',
+
+    # Orchestration and logging
+    'Logger',
+    'RuleUpdateOrchestrator',
 ]
