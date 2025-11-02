@@ -28,8 +28,11 @@ class RuleUpdateOrchestrator:
         """
         # Create branch
         branch_name = "feature/rule-update"
-        if not self.workflow.create_branch(branch_name):
-            return {"success": False, "error": "Failed to create branch"}
+        try:
+            if not self.workflow.create_branch(branch_name):
+                return {"success": False, "error": "Failed to create branch"}
+        except Exception as e:
+            return {"success": False, "error": f"Failed to create branch: {e}"}
 
         # Create PR
         try:
@@ -38,7 +41,7 @@ class RuleUpdateOrchestrator:
                 body="Automated rule update"
             )
         except Exception as e:
-            return {"success": False, "error": str(e)}
+            return {"success": False, "error": f"Failed to create pull request: {e}"}
 
         return {
             "success": True,

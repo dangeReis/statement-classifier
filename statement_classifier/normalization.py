@@ -131,12 +131,16 @@ class RuleNormalizer:
                         rule_data[1],
                         rule_data[2]
                     )
+                    # Normalize keywords to uppercase for case-insensitive matching
+                    normalized_keywords = []
+                    if isinstance(keywords, list):
+                        normalized_keywords = [kw.upper() for kw in keywords]
+                    else:
+                        normalized_keywords = [keywords.upper()]
+
                     v4_rules.append({
                         'id': f'v3-{rule_id}',
-                        'keywords': (
-                            keywords if isinstance(keywords, list)
-                            else [keywords]
-                        ),
+                        'keywords': normalized_keywords,
                         'purchase_type': 'Personal',
                         'category': category,
                         'subcategory': subcategory,
@@ -149,9 +153,11 @@ class RuleNormalizer:
         # Convert v3 online purchase keywords if present
         if 'online_purchase_keywords' in v3_rules:
             for keyword in v3_rules.get('online_purchase_keywords', []):
+                # Normalize keyword to uppercase for matching
+                normalized_keyword = keyword.upper()
                 # Find existing rules with this keyword and mark as online
                 for rule in v4_rules:
-                    if keyword.upper() in rule.get('keywords', []):
+                    if normalized_keyword in rule.get('keywords', []):
                         rule['online'] = True
 
         return {
