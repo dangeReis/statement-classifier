@@ -1,0 +1,8 @@
+owner: dangerusslee
+repo: statements
+feature_branch: ''
+use_gh_cli: true
+use_mcp: true
+path_shards:
+  - src/**
+  - tests/**

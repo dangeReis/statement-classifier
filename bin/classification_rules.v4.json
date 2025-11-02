@@ -1,0 +1,2715 @@
+{
+  "version": "4.0",
+  "rules": [
+    {
+      "id": "health-wellness",
+      "keywords": [
+        "PHR*ENTANDALLERGYASSOCIAT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Health & Wellness",
+      "subcategory": "Allergy Care",
+      "online": false,
+      "priority": 1000
+    },
+    {
+      "id": "bank-fees-interest-transaction-fees",
+      "keywords": [
+        "STANDARD ACH PMNTS",
+        "SAME-DAY ACH PAYROLL PAYMENT",
+        "RTP/SAME DAY - LOW VALUE",
+        "PAYMENT RETURN FEE"
+      ],
+      "purchase_type": "Business",
+      "category": "Bank Fees & Interest",
+      "subcategory": "Transaction Fees",
+      "online": false,
+      "priority": 1000
+    },
+    {
+      "id": "personal-care-haircut-salon",
+      "keywords": [
+        "SAMS HAIR LLC",
+        "J HAIR NJ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Personal Care",
+      "subcategory": "Haircut & Salon",
+      "online": false,
+      "priority": 1000
+    },
+    {
+      "id": "car-maintenance-and-repair-business",
+      "keywords": [
+        "RIVERSIDE NISSAN"
+      ],
+      "purchase_type": "Business",
+      "category": "Car Maintenance and Repair",
+      "subcategory": "Business",
+      "online": false,
+      "priority": 999
+    },
+    {
+      "id": "income-associate-programs",
+      "keywords": [
+        "FROM: AMAZON.COM REF:"
+      ],
+      "purchase_type": "Business",
+      "category": "Income",
+      "subcategory": "Associate Programs",
+      "online": true,
+      "priority": 999
+    },
+    {
+      "id": "income-fba-revenue",
+      "keywords": [
+        "FROM: BNF-AMAZON.COM",
+        "ORIG CO NAME:AMAZON.CEMB5BZA4"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Amazon FBA",
+      "online": true,
+      "priority": 999
+    },
+    {
+      "id": "entertainment-recreation-soccer",
+      "keywords": [
+        "A-GAMESOCCER.COM",
+        "CPP*WORLD CLASS SOCCER"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment & Recreation",
+      "subcategory": "Soccer",
+      "online": true,
+      "priority": 998
+    },
+    {
+      "id": "food-dining-groceries",
+      "keywords": [
+        "AMAZON FRESH"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Dining",
+      "subcategory": "Groceries",
+      "online": true,
+      "priority": 998
+    },
+    {
+      "id": "general-merchandise-online-purchases",
+      "keywords": [
+        "WALMART.COM",
+        "AMAZON.COM*",
+        "AMAZON MARK*",
+        "EBAY C",
+        "AMAZON MKTPL*",
+        "AMZ*AMAZON PAYMENTS",
+        "AMAZON RETA*",
+        "SAMSUNG",
+        "RITE AID",
+        "PAYPAL *BESTBUY COM"
+      ],
+      "purchase_type": "Business",
+      "category": "General Merchandise",
+      "subcategory": "Online Purchases",
+      "online": true,
+      "priority": 998
+    },
+    {
+      "id": "entertainment-recreation-movies-streaming",
+      "keywords": [
+        "ATI*",
+        "ATI10415-"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment & Recreation",
+      "subcategory": "Movies & Streaming",
+      "online": true,
+      "priority": 997
+    },
+    {
+      "id": "financial-transfers",
+      "keywords": [
+        "AUTOSAVE",
+        "CAPITAL ONE TRANSFER",
+        "WELLS FARGO IFI",
+        "MANUAL DB-BKRG",
+        "ONLINE TRANSFER FROM",
+        "ACH ELECTRONIC DEBIT - JPMORGAN CHASE EXT TRNSFR",
+        "ACH ELECTRONIC DEBIT - CAPITAL ONETRANSFER",
+        "JPMORGAN CHASE EXT TRNSFR",
+        "INSTANT PAYMENT CREDIT",
+        "STANT PAYMENT CREDIT",
+        "ONLINE REALTIME TRANSFER TO WELLS FARGO",
+        "ACH ELECTRONIC DEBIT - SANTBK CK WEBXFR",
+        "TRANSFER TO MONEY MARKET",
+        "ACH ELECTRONIC DEBIT - JPMORGAN CHASE ACCTVERIFY",
+        "ACH ELECTRONIC CREDIT JPMORGAN CHASE ACCTVERIFY",
+        "H ELECTRONIC DEBIT CAPITAL ONE N.A. CAPITALONE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Transfers",
+      "online": false,
+      "priority": 997
+    },
+    {
+      "id": "education-auto-school",
+      "keywords": [
+        "DRIVESAFETODAY.COM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Auto School",
+      "online": true,
+      "priority": 997
+    },
+    {
+      "id": "auto-travel-tolls",
+      "keywords": [
+        "E-Z*PASSNY"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto & Travel",
+      "subcategory": "Tolls",
+      "online": true,
+      "priority": 996
+    },
+    {
+      "id": "healthcare-dental-care",
+      "keywords": [
+        "FORT LEE ORTHODONTICS",
+        "STEVE D KIM DDS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Healthcare",
+      "subcategory": "Dental Care",
+      "online": false,
+      "priority": 996
+    },
+    {
+      "id": "clothing",
+      "keywords": [
+        "GAP OUTLET.COM",
+        "SHOPSIMON",
+        "LUDIO LLC"
+      ],
+      "purchase_type": "Personal",
+      "category": "Clothing",
+      "subcategory": "Apparel",
+      "online": true,
+      "priority": 996
+    },
+    {
+      "id": "auto-travel-auto-insurance",
+      "keywords": [
+        "GEICO *AUTO",
+        "GEICO  *AUTO"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto & Travel",
+      "subcategory": "Auto Insurance",
+      "online": true,
+      "priority": 995
+    },
+    {
+      "id": "home-office-home-improvement",
+      "keywords": [
+        "GENERAL PLUMBING SUP",
+        "LOWES #"
+      ],
+      "purchase_type": "Business",
+      "category": "Home Office",
+      "subcategory": "Home Improvement",
+      "online": false,
+      "priority": 995
+    },
+    {
+      "id": "entertainment-recreation-swimming",
+      "keywords": [
+        "ICP*GOLDFISH SWIM SCHOOL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment & Recreation",
+      "subcategory": "Swimming",
+      "online": false,
+      "priority": 995
+    },
+    {
+      "id": "professional-services-job-search",
+      "keywords": [
+        "LINKEDIN PRE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Professional Services",
+      "subcategory": "Job Search",
+      "online": false,
+      "priority": 994
+    },
+    {
+      "id": "food-and-drink-alcohol",
+      "keywords": [
+        "NB LIQUORS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food and Drink Alcohol",
+      "subcategory": "Liquor Store",
+      "online": false,
+      "priority": 994
+    },
+    {
+      "id": "clothing-shoes",
+      "keywords": [
+        "NIKEPOS_US"
+      ],
+      "purchase_type": "Personal",
+      "category": "Clothing Shoes",
+      "subcategory": "Athletic Shoes",
+      "online": false,
+      "priority": 994
+    },
+    {
+      "id": "business-operations-government-fees",
+      "keywords": [
+        "NJ ANNUAL REPORT",
+        "NJ BUSINES SERVICES",
+        "NJ MOTOR VEHICLE PAY",
+        "NJMVC"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Operations",
+      "subcategory": "Government Fees",
+      "online": false,
+      "priority": 993
+    },
+    {
+      "id": "travel-bus",
+      "keywords": [
+        "NJT BUS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Travel Bus",
+      "subcategory": "Bus Transit",
+      "online": false,
+      "priority": 993
+    },
+    {
+      "id": "business-operations-government-fees-23",
+      "keywords": [
+        "ONLINE PASSPORT FEES"
+      ],
+      "purchase_type": "Personal",
+      "category": "Government",
+      "subcategory": "Fees",
+      "online": false,
+      "priority": 993
+    },
+    {
+      "id": "utilities-services-phone-internet",
+      "keywords": [
+        "OOMA INC"
+      ],
+      "purchase_type": "Business",
+      "category": "Utilities & Services",
+      "subcategory": "Phone & Internet",
+      "online": false,
+      "priority": 992
+    },
+    {
+      "id": "medical-pets",
+      "keywords": [
+        "ORADELL FORT LEE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical Pets",
+      "subcategory": "Veterinary",
+      "online": false,
+      "priority": 992
+    },
+    {
+      "id": "income-x-registrar",
+      "keywords": [
+        "ORIG CO NAME:GODADDY.COM LLC"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Domain Reseller Revenue",
+      "online": true,
+      "priority": 992
+    },
+    {
+      "id": "income-adsense",
+      "keywords": [
+        "ORIG CO NAME:GOOGLE",
+        "ADSENSE"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "AdSense Revenue",
+      "online": true,
+      "priority": 991
+    },
+    {
+      "id": "income-cj",
+      "keywords": [
+        "ORIG CO NAME:MMS AS PAYCO"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Commission Junction Revenue",
+      "online": false,
+      "priority": 991
+    },
+    {
+      "id": "income-rakuten",
+      "keywords": [
+        "ORIG CO NAME:RAKUTEN MARKETIN"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Rakuten Affiliate Revenue",
+      "online": false,
+      "priority": 991
+    },
+    {
+      "id": "gift-cards-staples",
+      "keywords": [
+        "PAYPAL INST XFER FLUZ"
+      ],
+      "purchase_type": "Business",
+      "category": "Gift Cards Staples",
+      "subcategory": "Staples Gift Cards",
+      "online": true,
+      "priority": 990
+    },
+    {
+      "id": "education-chess",
+      "keywords": [
+        "PAYPAL *CHESS INTL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education Chess",
+      "subcategory": "Chess Classes",
+      "online": true,
+      "priority": 990
+    },
+    {
+      "id": "restaurants-fast-food",
+      "keywords": [
+        "ROYAL FARMS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Restaurants Fast Food",
+      "subcategory": "Fast Food",
+      "online": false,
+      "priority": 990
+    },
+    {
+      "id": "food-and-drink-sushi",
+      "keywords": [
+        "SAKE RESTAURANT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food and Drink Sushi",
+      "subcategory": "Sushi Restaurant",
+      "online": false,
+      "priority": 989
+    },
+    {
+      "id": "medical-doctors",
+      "keywords": [
+        "SQ *CHIRO HEALTH SPA",
+        "ZELLE PAYMENT TO MICHAEL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical Doctors",
+      "subcategory": "General Practice",
+      "online": false,
+      "priority": 989
+    },
+    {
+      "id": "glasses",
+      "keywords": [
+        "SQ *ENVISION EYE CARE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Glasses",
+      "subcategory": "Vision Care",
+      "online": false,
+      "priority": 989
+    },
+    {
+      "id": "food-and-drink-restaurants",
+      "keywords": [
+        "SQ *OCC READING TERMIN",
+        "TST* MANGO MANGO DESSE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food and Drink Restaurants",
+      "subcategory": "Casual Dining",
+      "online": false,
+      "priority": 988
+    },
+    {
+      "id": "general-merchandise-online-purchases-37",
+      "keywords": [
+        "TARGET",
+        "WAL-MART #",
+        "WM SUPERCENTER #"
+      ],
+      "purchase_type": "Business",
+      "category": "General Merchandise",
+      "subcategory": "Online Purchases",
+      "online": false,
+      "priority": 988
+    },
+    {
+      "id": "health-and-wellness-allergy-shots",
+      "keywords": [
+        "TEANECK ALLERGY&IMMUNOLO"
+      ],
+      "purchase_type": "Personal",
+      "category": "Health and Wellness Allergy Shots",
+      "subcategory": "Allergy Immunotherapy",
+      "online": false,
+      "priority": 988
+    },
+    {
+      "id": "food-and-drink-ice-cream",
+      "keywords": [
+        "TST* THE BRICKERY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food and Drink Ice Cream",
+      "subcategory": "Ice Cream Shop",
+      "online": false,
+      "priority": 987
+    },
+    {
+      "id": "phone-repair",
+      "keywords": [
+        "UBREAKIFIX"
+      ],
+      "purchase_type": "Business",
+      "category": "Phone Repair",
+      "subcategory": "Phone Repair Services",
+      "online": false,
+      "priority": 987
+    },
+    {
+      "id": "professional-fees",
+      "keywords": [
+        "UPWORK"
+      ],
+      "purchase_type": "Business",
+      "category": "Professional Fees",
+      "subcategory": "Contractor Services",
+      "online": false,
+      "priority": 987
+    },
+    {
+      "id": "shipping-postage-usps",
+      "keywords": [
+        "USPS PO"
+      ],
+      "purchase_type": "Business",
+      "category": "Shipping & Postage",
+      "subcategory": "USPS",
+      "online": false,
+      "priority": 986
+    },
+    {
+      "id": "utility-water",
+      "keywords": [
+        "VEOLIANJ"
+      ],
+      "purchase_type": "Business",
+      "category": "Utility Water",
+      "subcategory": "Water Service",
+      "online": true,
+      "priority": 986
+    },
+    {
+      "id": "insurance-sports",
+      "keywords": [
+        "VERTICAL INSURE",
+        "VI-COVERAGE.COM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Insurance",
+      "subcategory": "Sports",
+      "online": true,
+      "priority": 986
+    },
+    {
+      "id": "education-training-courses-certifications",
+      "keywords": [
+        "WWW.WHIZLABS.COM",
+        "CERTIVERSE*"
+      ],
+      "purchase_type": "Business",
+      "category": "Education & Training",
+      "subcategory": "Courses & Certifications",
+      "online": true,
+      "priority": 985
+    },
+    {
+      "id": "auto-travel-tires",
+      "keywords": [
+        "ZELLE PAYMENT FROM MICHELIN"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto & Travel",
+      "subcategory": "Tires",
+      "online": false,
+      "priority": 985
+    },
+    {
+      "id": "education-language-learning",
+      "keywords": [
+        "ZELLE PAYMENT TO CCCNJ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education Language Learning",
+      "subcategory": "Language Classes",
+      "online": false,
+      "priority": 985
+    },
+    {
+      "id": "recreation-pickleball",
+      "keywords": [
+        "ZELLE PAYMENT TO CCCNJ PICKLEBALL",
+        "ZELLE PAYMENT TO RAJ PROAM",
+        "ZELLE PAYMENT TO VIVIAN HUNG"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation Pickleball",
+      "subcategory": "Pickleball",
+      "online": false,
+      "priority": 984
+    },
+    {
+      "id": "recreation-liondance",
+      "keywords": [
+        "ZELLE PAYMENT TO SIFU HENRY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation Liondance",
+      "subcategory": "Lion Dance",
+      "online": false,
+      "priority": 984
+    },
+    {
+      "id": "education-language-schools",
+      "keywords": [
+        "ZELLE PAYMENT TO KAI"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education Language Schools",
+      "subcategory": "Language Classes",
+      "online": false,
+      "priority": 984
+    },
+    {
+      "id": "insurance",
+      "keywords": [
+        "STATE FARM INSURANCE"
+      ],
+      "purchase_type": "Business",
+      "category": "Insurance",
+      "subcategory": "General Insurance",
+      "online": true,
+      "priority": 983
+    },
+    {
+      "id": "income-ebay",
+      "keywords": [
+        "ACH ELECTRONIC CREDIT EBAY"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "eBay Sales",
+      "online": false,
+      "priority": 983
+    },
+    {
+      "id": "income-moody-s",
+      "keywords": [
+        "MOODY'S RISK PAYROLL",
+        "ACH ELECTRONIC CREDIT MOODYS ANALYTICS DIRECT DEP"
+      ],
+      "purchase_type": "Personal",
+      "category": "Income",
+      "subcategory": "Payroll Income",
+      "online": false,
+      "priority": 983
+    },
+    {
+      "id": "investment-ira",
+      "keywords": [
+        "VANGUARD BUY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Investment IRA",
+      "subcategory": "IRA Contributions",
+      "online": false,
+      "priority": 982
+    },
+    {
+      "id": "rent-property-property-tax",
+      "keywords": [
+        "BILL PAYMENT BORO OF PALISADES PARK"
+      ],
+      "purchase_type": "Business",
+      "category": "Rent & Property",
+      "subcategory": "Property Tax",
+      "online": false,
+      "priority": 982
+    },
+    {
+      "id": "taxes-state-income-tax",
+      "keywords": [
+        "NY STATE NYSTTAXRFD",
+        "NYS DTF PIT TAX PAYMNT",
+        "NJ WEB PMT",
+        "STATE OF N.J. NJSTTAXRFD",
+        "STATE OF N.J.NJSTTAXRFD",
+        "NYSTTAXRFD",
+        "NYS DTF PIT"
+      ],
+      "purchase_type": "Business",
+      "category": "Taxes",
+      "subcategory": "State Income Tax",
+      "online": false,
+      "priority": 982
+    },
+    {
+      "id": "benefits-reimbursement",
+      "keywords": [
+        "BENEFIT RESOURCE REIMBURSEM",
+        "PAYFLEX-MOODY'S",
+        "AETNA VOLUNTARY",
+        "INSPIRA-MOODY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Benefits Reimbursement",
+      "subcategory": "Health Benefits",
+      "online": false,
+      "priority": 981
+    },
+    {
+      "id": "income-interest",
+      "keywords": [
+        "INTEREST PAID FOR"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Interest Income",
+      "online": false,
+      "priority": 981
+    },
+    {
+      "id": "income-unemployment",
+      "keywords": [
+        "UI UEMPLOYMEN"
+      ],
+      "purchase_type": "Personal",
+      "category": "Income",
+      "subcategory": "Unemployment Benefits",
+      "online": false,
+      "priority": 981
+    },
+    {
+      "id": "cobra-payments",
+      "keywords": [
+        "FIDELITY INVESTM MED PAYMNT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Cobra Payments",
+      "subcategory": "COBRA Health Insurance",
+      "online": false,
+      "priority": 980
+    },
+    {
+      "id": "income-panther",
+      "keywords": [
+        "THE PANTHER GROU PAYROLL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Income",
+      "subcategory": "Payroll Income",
+      "online": false,
+      "priority": 980
+    },
+    {
+      "id": "taxes-federal-income-tax",
+      "keywords": [
+        "IRS USATAXPYMT",
+        "IRS TREAS 310 TAX REF",
+        "IRSUSATAXPYMT",
+        "IRSTREAS",
+        "IRS TREAS",
+        "IRS TREAS 310",
+        "USATAXPYMT",
+        "TAX REF"
+      ],
+      "purchase_type": "Business",
+      "category": "Taxes",
+      "subcategory": "Federal Income Tax",
+      "online": false,
+      "priority": 980
+    },
+    {
+      "id": "shopping-rebates",
+      "keywords": [
+        "IBOTTA, INC."
+      ],
+      "purchase_type": "Personal",
+      "category": "Shopping Rebates",
+      "subcategory": "Cashback Rebates",
+      "online": false,
+      "priority": 979
+    },
+    {
+      "id": "coupons",
+      "keywords": [
+        "PAYPAL *BOLTINC"
+      ],
+      "purchase_type": "Business",
+      "category": "Coupons",
+      "subcategory": "Cashback Coupons",
+      "online": true,
+      "priority": 979
+    },
+    {
+      "id": "grocery-supermarket",
+      "keywords": [
+        "H MART RIDGEFIELD NJ RIDGEFIELD NJ",
+        "SAMARKAND BAZAR BROOKLYN NY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Grocery",
+      "subcategory": "Supermarket",
+      "online": false,
+      "priority": 979
+    },
+    {
+      "id": "entertainment-movies",
+      "keywords": [
+        "ATI*10415-21320006 8448386284 CA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment",
+      "subcategory": "Movies",
+      "online": true,
+      "priority": 978
+    },
+    {
+      "id": "food-drink-restaurant",
+      "keywords": [
+        "WENDYS #2480 TAPPAN NY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Restaurant",
+      "online": false,
+      "priority": 978
+    },
+    {
+      "id": "medical-payment",
+      "keywords": [
+        "ZELLE PAYMENT TO MICHAEL STANGO"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Payment",
+      "online": false,
+      "priority": 978
+    },
+    {
+      "id": "financial-payment",
+      "keywords": [
+        "CHASE CREDIT CRD",
+        "JPMORGAN CHASE B CHASE PYMT",
+        "PAYMENT THANK YOU - WEB",
+        "AUTOMATIC PAYMENT - THANK",
+        "BK OF AMER VI/MC",
+        "PAYMENT TO CHASE CARD ENDING IN",
+        "PAYMENT TO CHASE CARD",
+        "CHASE PYMT",
+        "ACH ELECTRONIC DEBIT - AMERICAN EXPRACH PMT",
+        "ACH ELECTRONIC DEBIT - DISCOVER E-PAYMENT",
+        "ACH ELECTRONIC DEBIT AMERICAN EXPR ACH PMT",
+        "H ELECTRONIC DEBIT AMERICAN EXPR ACH PMT",
+        "ACH ELECTRONIC DEBIT - FID BKG SVC LLCMONEYLINE",
+        "ACH ELECTRONIC DEBIT - CITI AUTOPAY PAYMENT",
+        "ACH ELECTRONIC DEBIT CITI AUTOPAY PAYMENT",
+        "ACH ELECTRONIC DEBIT - CITI THANKYOUAUTO PYMT",
+        "ACH ELECTRONIC DEBIT - SEARS PAYMENTAUTO PYMT",
+        "ACH ELECTRONIC DEBIT SEARS PAYMENT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Payment",
+      "online": false,
+      "priority": 999
+    },
+    {
+      "id": "financial-fee",
+      "keywords": [
+        "MONTHLY SERVICE FEE REVERSAL",
+        "MONTHLY SERVICE FEE",
+        "STANDARD ACH PMNTS INITIAL FEE",
+        "PAYMENT RETURN FEE:"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Fee",
+      "online": false,
+      "priority": 976
+    },
+    {
+      "id": "financial-income",
+      "keywords": [
+        "CREDIT RETURN:",
+        "INTEREST ADJUSTMENT CREDIT",
+        "STATEMENT CREDIT",
+        "CPC TIERED OFFER",
+        "HENRY HUNG",
+        "ACH ELECTRONIC CREDIT FEDERAL RESERVEEDI PYMNTS",
+        "ACH ELECTRONIC CREDIT CITICARDS CASH REWARD"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Interest Income",
+      "online": false,
+      "priority": 976
+    },
+    {
+      "id": "financial-withdrawal",
+      "keywords": [
+        "ATM WITHDRAWAL",
+        "CASH WITHDRAWAL",
+        "SH WITHDRAWAL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Withdrawal",
+      "online": false,
+      "priority": 975
+    },
+    {
+      "id": "financial-deposit",
+      "keywords": [
+        "DEPOSIT",
+        "REMOTE ONLINE DEPOSIT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Deposit",
+      "online": false,
+      "priority": 975
+    },
+    {
+      "id": "financial-check",
+      "keywords": [
+        "CHECK"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Check",
+      "online": false,
+      "priority": 975
+    },
+    {
+      "id": "financial-interest",
+      "keywords": [
+        "INTEREST PAYMENT",
+        "INTEREST CHARGE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Interest",
+      "online": false,
+      "priority": 974
+    },
+    {
+      "id": "staples-gift-card",
+      "keywords": [
+        "FLUZ APP",
+        "PAYPAL *FLUZ STAPLES"
+      ],
+      "purchase_type": "Business",
+      "category": "Staples Gift Card",
+      "subcategory": "Staples Gift Cards",
+      "online": true,
+      "priority": 974
+    },
+    {
+      "id": "financial-taxes",
+      "keywords": [
+        "INTUIT *TURBOTAX"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Operations",
+      "subcategory": "Tax Software",
+      "online": false,
+      "priority": 974
+    },
+    {
+      "id": "insurance-supplemental",
+      "keywords": [
+        "TRANSAMERICA LIF PAYABLES"
+      ],
+      "purchase_type": "Personal",
+      "category": "Insurance",
+      "subcategory": "Supplemental",
+      "online": false,
+      "priority": 973
+    },
+    {
+      "id": "insurance-sports-82",
+      "keywords": [
+        "PP*REG PROTECTION"
+      ],
+      "purchase_type": "Personal",
+      "category": "Insurance",
+      "subcategory": "Sports",
+      "online": true,
+      "priority": 973
+    },
+    {
+      "id": "insurance-condo",
+      "keywords": [
+        "WAYNE ZHANG"
+      ],
+      "purchase_type": "Personal",
+      "category": "Insurance",
+      "subcategory": "Condo",
+      "online": false,
+      "priority": 973
+    },
+    {
+      "id": "payroll",
+      "keywords": [
+        "BASIC ONLINE PAYROLL PAYMENT"
+      ],
+      "purchase_type": "Business",
+      "category": "Payroll",
+      "subcategory": "Payroll Services",
+      "online": false,
+      "priority": 972
+    },
+    {
+      "id": "domains",
+      "keywords": [
+        "GODADDY.COM LLC"
+      ],
+      "purchase_type": "Business",
+      "category": "Domains",
+      "subcategory": "Domain Registration",
+      "online": true,
+      "priority": 972
+    },
+    {
+      "id": "rakuten",
+      "keywords": [
+        "RAKUTEN MARKETIN"
+      ],
+      "purchase_type": "Business",
+      "category": "Rakuten",
+      "subcategory": "Rakuten Affiliate",
+      "online": false,
+      "priority": 971
+    },
+    {
+      "id": "registered-agent",
+      "keywords": [
+        "INCORP SERVICES INC"
+      ],
+      "purchase_type": "Business",
+      "category": "Registered Agent",
+      "subcategory": "Registered Agent Services",
+      "online": true,
+      "priority": 971
+    },
+    {
+      "id": "general-merchandise-online",
+      "keywords": [
+        "SEARS.COM"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Online",
+      "online": true,
+      "priority": 971
+    },
+    {
+      "id": "general-merchandise-online-90",
+      "keywords": [
+        "ONLINE SHOPPING"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Online",
+      "online": false,
+      "priority": 970
+    },
+    {
+      "id": "business-inventory-office-supplies",
+      "keywords": [
+        "STAPLES",
+        "ZORO TOOLS"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Inventory",
+      "subcategory": "Office Supplies",
+      "online": true,
+      "priority": 970
+    },
+    {
+      "id": "general-merchandise-warehouse",
+      "keywords": [
+        "COSTCO WHSE"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Warehouse",
+      "online": false,
+      "priority": 970
+    },
+    {
+      "id": "general-merchandise-online-93",
+      "keywords": [
+        "MEH.COM",
+        "MERCATALYST.COM"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Online",
+      "online": true,
+      "priority": 969
+    },
+    {
+      "id": "recreation-sports",
+      "keywords": [
+        "AMERICAN KOREAN TAEKWONDO",
+        "PRESTIGE PICKLEBALL",
+        "PROAM PICKLEBALL",
+        "THE PICKLR",
+        "SPORTIME PICKLEBALL",
+        "HUDSON RIVER PICKLEBAL",
+        "SSP*FOUNTAINFITNESSCE",
+        "CCCNJ PICKLEBALL",
+        "VIVIAN HUNG",
+        "ZELLE PAYMENT TO CCCNJ888",
+        "PP*LEONIA RECREATION",
+        "BOROUGH OF LEONIA REC",
+        "PP*COMMUNITYPASS FEES",
+        "COMMUNITYPASS SERV FEE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Sports",
+      "online": true,
+      "priority": 969
+    },
+    {
+      "id": "recreation-activities",
+      "keywords": [
+        "USA SPORT GROUP",
+        "SOCCER INTELLIGYM",
+        "SC* FUTURE SOCCER",
+        "SP A-GAME SOCCER",
+        "CHESS INTL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Activities",
+      "online": true,
+      "priority": 969
+    },
+    {
+      "id": "recreation-fitness",
+      "keywords": [
+        "WELLONTARGET FITNESS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Fitness",
+      "online": true,
+      "priority": 968
+    },
+    {
+      "id": "recreation-sporting-goods",
+      "keywords": [
+        "SP GAIN THE EDGE US",
+        "SQ *SOCCER POST FRANKL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Sporting Goods",
+      "online": false,
+      "priority": 968
+    },
+    {
+      "id": "clothing-apparel",
+      "keywords": [
+        "DULUTH TRADING RAMSEY",
+        "LANDS END",
+        "SHOP PREMIUM OUTL",
+        "SP STOKO USA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Clothing",
+      "subcategory": "Apparel",
+      "online": true,
+      "priority": 968
+    },
+    {
+      "id": "clothing-shoes-99",
+      "keywords": [
+        "ADIDAS",
+        "ASICS",
+        "BLT*XL FEET",
+        "NIKE.COM",
+        "SKECHERS.COM",
+        "MIDWEST SPORTS",
+        "SP SOCCERZONE USA",
+        "NIKEPOS_US PARAMUS NJ",
+        "SP ORTHOFEET"
+      ],
+      "purchase_type": "Personal",
+      "category": "Clothing",
+      "subcategory": "Shoes",
+      "online": true,
+      "priority": 967
+    },
+    {
+      "id": "subscriptions-publication",
+      "keywords": [
+        "WIRED",
+        "A MEDIUM CORPORATION",
+        "MEDIUM ANNUAL"
+      ],
+      "purchase_type": "Business",
+      "category": "Subscriptions",
+      "subcategory": "Publication",
+      "online": true,
+      "priority": 967
+    },
+    {
+      "id": "subscriptions-software",
+      "keywords": [
+        "ANTHROPIC",
+        "CHATGPT",
+        "CLAUDE.AI",
+        "OPENAI *CHATGPTSUBSCR",
+        "GOOGLE *TOMORROW CORP",
+        "INTUIT *TURBOTAX CL",
+        "CHATGPT SUBSCRIPTION"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Operations",
+      "subcategory": "Tax Software",
+      "online": true,
+      "priority": 967
+    },
+    {
+      "id": "subscriptions-home-automation",
+      "keywords": [
+        "MYQ SUBSCRIPTION"
+      ],
+      "purchase_type": "Personal",
+      "category": "Subscriptions",
+      "subcategory": "Home Automation",
+      "online": true,
+      "priority": 966
+    },
+    {
+      "id": "shipping-e-commerce-shipping",
+      "keywords": [
+        "VEEQO.COM"
+      ],
+      "purchase_type": "Business",
+      "category": "Shipping",
+      "subcategory": "E-commerce Shipping",
+      "online": true,
+      "priority": 966
+    },
+    {
+      "id": "shipping-ebay",
+      "keywords": [
+        "PAYPAL *EBAYINCSHIP"
+      ],
+      "purchase_type": "Business",
+      "category": "Shipping",
+      "subcategory": "Ebay",
+      "online": true,
+      "priority": 966
+    },
+    {
+      "id": "hosting-cloud",
+      "keywords": [
+        "AWS",
+        "AMAZON WEB SERVICES"
+      ],
+      "purchase_type": "Business",
+      "category": "Hosting",
+      "subcategory": "Cloud",
+      "online": true,
+      "priority": 965
+    },
+    {
+      "id": "advertising-marketing",
+      "keywords": [
+        "GOOGLE *ADS"
+      ],
+      "purchase_type": "Business",
+      "category": "Advertising",
+      "subcategory": "Marketing",
+      "online": true,
+      "priority": 965
+    },
+    {
+      "id": "domains-registration",
+      "keywords": [
+        "DNH*DOMAINS"
+      ],
+      "purchase_type": "Business",
+      "category": "Domains",
+      "subcategory": "Registration",
+      "online": true,
+      "priority": 965
+    },
+    {
+      "id": "domains-reseller-fee",
+      "keywords": [
+        "DNH*GODADDY"
+      ],
+      "purchase_type": "Business",
+      "category": "Domains",
+      "subcategory": "Reseller Fee",
+      "online": true,
+      "priority": 964
+    },
+    {
+      "id": "utility-electric-gas",
+      "keywords": [
+        "PSEG"
+      ],
+      "purchase_type": "Business",
+      "category": "Utility",
+      "subcategory": "Electric/Gas",
+      "online": false,
+      "priority": 964
+    },
+    {
+      "id": "utility-internet",
+      "keywords": [
+        "VERIZON BILL PAYMENT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Utility",
+      "subcategory": "Internet",
+      "online": true,
+      "priority": 963
+    },
+    {
+      "id": "entertainment-streaming",
+      "keywords": [
+        "HULU",
+        "HLU*HULUPLUS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment",
+      "subcategory": "Streaming",
+      "online": true,
+      "priority": 963
+    },
+    {
+      "id": "entertainment-gaming",
+      "keywords": [
+        "GOOGLE *ROBTOP GAMES"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment",
+      "subcategory": "Gaming",
+      "online": true,
+      "priority": 963
+    },
+    {
+      "id": "entertainment-arts-culture",
+      "keywords": [
+        "TIANYU ARTS AND CULTUR",
+        "HISTORICPHILADELPHIA",
+        "MOIPHILLY.COM",
+        "PAYPAL *PHILADELPHI"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment",
+      "subcategory": "Arts & Culture",
+      "online": true,
+      "priority": 962
+    },
+    {
+      "id": "personal-care-haircut",
+      "keywords": [
+        "GREAT CLIPS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Personal Care",
+      "subcategory": "Haircut",
+      "online": false,
+      "priority": 962
+    },
+    {
+      "id": "personal-care-spa",
+      "keywords": [
+        "MH* PALISADESPA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Personal Care",
+      "subcategory": "Spa",
+      "online": false,
+      "priority": 962
+    },
+    {
+      "id": "grocery-csa",
+      "keywords": [
+        "FLOCKTOWN FARM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Grocery",
+      "subcategory": "CSA",
+      "online": true,
+      "priority": 961
+    },
+    {
+      "id": "grocery-convenience-store",
+      "keywords": [
+        "7-ELEVEN",
+        "GOOD MORNING MART",
+        "VANILLA GOURMET",
+        "ICE CREAM ON GRAND",
+        "ROYAL FARMS #299"
+      ],
+      "purchase_type": "Personal",
+      "category": "Grocery",
+      "subcategory": "Convenience Store",
+      "online": false,
+      "priority": 961
+    },
+    {
+      "id": "grocery-supermarket-119",
+      "keywords": [
+        "ALSTEDE FARMS",
+        "BIG BAZAAR",
+        "IRON BOUND FARMS",
+        "ACME",
+        "ALDI",
+        "CHERRY HILL MARKET",
+        "KAM MAN FOOD",
+        "KINGS APPLE FARMERS MA",
+        "LIDL",
+        "MOMS OF PARAMUS",
+        "NET COST",
+        "NUT HOUSE",
+        "PAPA KARLO FRESH MARKE",
+        "SHOPRITE",
+        "STEW LEONARDS",
+        "TASHKENT SUPERMARKET",
+        "THE FRESH MARKET",
+        "TRADER JOE S",
+        "WHOLEFDS",
+        "WOORI MART",
+        "HANNAM MART",
+        "MITSUWA MRKTPLACE",
+        "99 RANCH MARKET",
+        "GOLDEN KEY 2 CORP",
+        "STOP & SHOP",
+        "HAR LITTLE FERRY INC",
+        "ROYAL SEAFOD",
+        "TWINS MARKET",
+        "FOOD BAZAAR",
+        "WHOLEFDS CLO",
+        "WHOLEFDS RDW",
+        "WHOLEFDS WCL",
+        "SHOPRITE LODI",
+        "BRIGHTON EXPRESS FOOD",
+        "SQ *CEDAR SHOP SHOP",
+        "ROCK FARMERS MARKET",
+        "ROYAL SEAFOOD"
+      ],
+      "purchase_type": "Personal",
+      "category": "Grocery",
+      "subcategory": "Supermarket",
+      "online": false,
+      "priority": 961
+    },
+    {
+      "id": "home-improvement-mounts",
+      "keywords": [
+        "SP MOUNTING DREAM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Home Improvement",
+      "subcategory": "Mounts",
+      "online": true,
+      "priority": 960
+    },
+    {
+      "id": "home-improvement-supplies",
+      "keywords": [
+        "AMERICAN STANDARD",
+        "THE HOME DEPOT",
+        "RAMAPO WHOLESALERS",
+        "LOWES"
+      ],
+      "purchase_type": "Business",
+      "category": "Home Improvement",
+      "subcategory": "Supplies",
+      "online": true,
+      "priority": 960
+    },
+    {
+      "id": "education-competition",
+      "keywords": [
+        "BERGEN COUNTY",
+        "BERGEN TECH",
+        "TGA OF BERGEN COUNTY",
+        "MATH KANGAROO USA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Competition",
+      "online": false,
+      "priority": 959
+    },
+    {
+      "id": "education-certification",
+      "keywords": [
+        "WL *VUE*TESTING EXAM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Certification",
+      "online": true,
+      "priority": 959
+    },
+    {
+      "id": "education-math",
+      "keywords": [
+        "PAYPAL *EXPII INC"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Math",
+      "online": true,
+      "priority": 959
+    },
+    {
+      "id": "medical-doctor",
+      "keywords": [
+        "JUSTIN K. PALTROWITZ",
+        "NEW JERSEY IMAGING",
+        "VALLEY MEDICAL GROUP"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Doctor",
+      "online": false,
+      "priority": 958
+    },
+    {
+      "id": "medical-pharmacy",
+      "keywords": [
+        "HUDSON DRUG",
+        "ALL AMERICAN DRUGGIST",
+        "CVS/PHARMACY",
+        "WALGREENS",
+        "WWW.CVS.COM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Pharmacy",
+      "online": true,
+      "priority": 958
+    },
+    {
+      "id": "medical-vision",
+      "keywords": [
+        "FOCUS EYE CARE PC"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Vision",
+      "online": false,
+      "priority": 958
+    },
+    {
+      "id": "medical-dental",
+      "keywords": [
+        "STEVE D KIM DDS LEONIA NJ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Dental",
+      "online": false,
+      "priority": 957
+    },
+    {
+      "id": "job-search-general",
+      "keywords": [
+        "NOVORESUME"
+      ],
+      "purchase_type": "Personal",
+      "category": "Job Search",
+      "subcategory": "General",
+      "online": true,
+      "priority": 957
+    },
+    {
+      "id": "parking-meter",
+      "keywords": [
+        "PALISADES PARK NJ PARK"
+      ],
+      "purchase_type": "Personal",
+      "category": "Parking",
+      "subcategory": "Meter",
+      "online": false,
+      "priority": 957
+    },
+    {
+      "id": "parking-app",
+      "keywords": [
+        "SPOTHERO"
+      ],
+      "purchase_type": "Personal",
+      "category": "Parking",
+      "subcategory": "App",
+      "online": true,
+      "priority": 956
+    },
+    {
+      "id": "auto-service",
+      "keywords": [
+        "GLEN TOYOTA"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto",
+      "subcategory": "Service",
+      "online": false,
+      "priority": 956
+    },
+    {
+      "id": "auto-fuel",
+      "keywords": [
+        "COSTCO GAS",
+        "EXXON",
+        "FUEL 4 TEANECK",
+        "SUNOCO",
+        "SHELL"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto",
+      "subcategory": "Fuel",
+      "online": false,
+      "priority": 955
+    },
+    {
+      "id": "services-photography",
+      "keywords": [
+        "SCHOOLCRAFTSTUDIOS.COM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Services",
+      "subcategory": "Photography",
+      "online": true,
+      "priority": 955
+    },
+    {
+      "id": "home-security-subscription",
+      "keywords": [
+        "RING STANDARD PLAN"
+      ],
+      "purchase_type": "Business",
+      "category": "Home Security",
+      "subcategory": "Subscription",
+      "online": true,
+      "priority": 955
+    },
+    {
+      "id": "health-wellness-138",
+      "keywords": [
+        "CHARLOTTES WEB"
+      ],
+      "purchase_type": "Personal",
+      "category": "Health",
+      "subcategory": "Wellness",
+      "online": true,
+      "priority": 954
+    },
+    {
+      "id": "home-services-hvac",
+      "keywords": [
+        "SQ *COOL BEAR HVACR"
+      ],
+      "purchase_type": "Business",
+      "category": "Home Services",
+      "subcategory": "HVAC",
+      "online": false,
+      "priority": 954
+    },
+    {
+      "id": "travel-public-transport",
+      "keywords": [
+        "NJT BUS MY-TIX"
+      ],
+      "purchase_type": "Personal",
+      "category": "Travel",
+      "subcategory": "Public Transport",
+      "online": false,
+      "priority": 954
+    },
+    {
+      "id": "travel-taxi-ride-share",
+      "keywords": [
+        "UBER *TRIP"
+      ],
+      "purchase_type": "Personal",
+      "category": "Travel",
+      "subcategory": "Taxi/Ride Share",
+      "online": true,
+      "priority": 953
+    },
+    {
+      "id": "travel-lodging",
+      "keywords": [
+        "MARRIOTT",
+        "PRICELN*HOMEWOOD SUITE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Travel",
+      "subcategory": "Lodging",
+      "online": true,
+      "priority": 953
+    },
+    {
+      "id": "pets-supplies",
+      "keywords": [
+        "WWW.PETMEADOW.COM",
+        "PET SUPPLIES PLUS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Pets",
+      "subcategory": "Supplies",
+      "online": true,
+      "priority": 953
+    },
+    {
+      "id": "food-drink-restaurant-144",
+      "keywords": [
+        "RESTAURANT",
+        "BURGER KING",
+        "CHICK-FIL-A",
+        "MCDONALDS",
+        "POPEYES",
+        "WENDY'S",
+        "WINGSTOP",
+        "THE HALAL GUYS",
+        "PANDA EXPRESS",
+        "ARAMARK",
+        "BOURBON STREET GRILL",
+        "BROAD SEAFOOD CENTER",
+        "CLOSTER #1 CHINESE RES",
+        "COCO-HACKENSACK STORE",
+        "DD/BR",
+        "HABIT TETERBORO",
+        "KFC",
+        "LITTLE HOUSE RESTORAN.",
+        "LUIGIS PIZZA RESTAURAN",
+        "THE GYRO P*",
+        "TST*LIBERTY GARDEN",
+        "UBER *EATS",
+        "YONG KANG STREET IN GA",
+        "105192 CAR 105193 CINN",
+        "PANERA BREAD",
+        "Q TEA TAPAS INC",
+        "REALFRUITBUBBLETEA.COM",
+        "PAYPAL *PANDARESTAU",
+        "SQ *C&P LANTERN FEST",
+        "SQ *MATCHA PANDA",
+        "SQ *OCC READINGTERMIN",
+        "SQ *TOP HAT COFFEE LOU",
+        "HEARSTCAFERA QPS",
+        "HUNA EXPRESS",
+        "ASAP HOSPITALITY",
+        "DEEMIBANG",
+        "DELMONICOS STEAKHOUSE",
+        "HGI FORT LEE LLC",
+        "IHOP",
+        "TOO GOOD TO GO INC.",
+        "SQ *KAPAMILYA FOOD",
+        "TST* UGLY DUMPLING"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Restaurant",
+      "online": true,
+      "priority": 952
+    },
+    {
+      "id": "food-drink-cafe",
+      "keywords": [
+        "ORANGE COFFEE CAFE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Cafe",
+      "online": false,
+      "priority": 952
+    },
+    {
+      "id": "food-drink-ice-cream",
+      "keywords": [
+        "ICE CREAM",
+        "DAIRY QUEEN",
+        "BASSETTS ICE CREAM",
+        "CLIFFS ICE CREAM",
+        "GIO'S GELATO & EXPRESS",
+        "GRAND ICECREAM LLC",
+        "SQ *C&C CREAMERY",
+        "SQ *CRANBERRY JUNCTION",
+        "SQ *DANIELA'S ICE CREA",
+        "SQ *DIPPY SIPPY",
+        "SQ *KAI CREAMERY",
+        "SQ *UNCLE LOUIE G'S IT",
+        "YO-DELIGHT FROZEN YOGU",
+        "RITAS",
+        "FREDDYS",
+        "TST*WHOLLY COW",
+        "FOUR SEASONS ICE CREAM",
+        "SQ *HOMETOWN CREAMERY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Ice Cream",
+      "online": false,
+      "priority": 952
+    },
+    {
+      "id": "food-drink-sushi",
+      "keywords": [
+        "SUSHI",
+        "ASAHI SUSHI",
+        "BM * ASAHI SUSHI",
+        "CHOO CHOO TRAIN SUSHI",
+        "DD *DOORDASH LEOSUSHIA",
+        "ICHI SUSHI II",
+        "KUMO NJ",
+        "KUMO RESTAURANT",
+        "NAMS SUSHI",
+        "NEW SACHIKO",
+        "OH BOY SUSHI",
+        "OSAKA SUSHI",
+        "SAKE RESTAURANT INC",
+        "SANTOUKA NEW JERSEY",
+        "SUSHI HOUSE",
+        "SUSHI PALACE",
+        "TST*NABI SUSHI",
+        "UEP*KUMO",
+        "URESHI SUSHI",
+        "WASABI SUSHI INC",
+        "SQ *KURA REVOLVING SUS",
+        "SQ *OISHII",
+        "SQ *RAMEN MATSU",
+        "FOOD AT* KAME SUSHI",
+        "PICNIC SUSHI"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Sushi",
+      "online": true,
+      "priority": 951
+    },
+    {
+      "id": "food-drink-sushi-148",
+      "keywords": [
+        "BROAD SEAFOOD CENTER PALISADES PARNJ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Sushi",
+      "online": false,
+      "priority": 951
+    },
+    {
+      "id": "auto",
+      "keywords": [
+        "E-Z*PASSNY REBILL"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto",
+      "subcategory": "Tolls",
+      "online": true,
+      "priority": 951
+    },
+    {
+      "id": "financial-payment-150",
+      "keywords": [
+        "AUTOPAY PAYMENT THANK YOU IL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Payment",
+      "online": false,
+      "priority": 950
+    },
+    {
+      "id": "grocery-supermarket-151",
+      "keywords": [
+        "H MART FORT LEE LLC FORT LEE NJ",
+        "H MART"
+      ],
+      "purchase_type": "Personal",
+      "category": "Grocery",
+      "subcategory": "Supermarket",
+      "online": false,
+      "priority": 950
+    },
+    {
+      "id": "entertainment-movies-152",
+      "keywords": [
+        "ATI*10415-21220961 8448386284 CA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Entertainment",
+      "subcategory": "Movies",
+      "online": true,
+      "priority": 950
+    },
+    {
+      "id": "grocery-supermarket-153",
+      "keywords": [
+        "HAR RIDGEFIELD CORP RIDGEFIELD NJ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Grocery",
+      "subcategory": "Supermarket",
+      "online": false,
+      "priority": 949
+    },
+    {
+      "id": "return",
+      "keywords": [
+        "MYQ SUBSCRIPTION 800-528-5880 IL"
+      ],
+      "purchase_type": "Business",
+      "category": "Return",
+      "subcategory": "Refund",
+      "online": true,
+      "priority": 949
+    },
+    {
+      "id": "food-drink-bakery",
+      "keywords": [
+        "BAKERY",
+        "BON EPI DESSERT",
+        "D'AVANT BAKERY",
+        "LA BON BAKE",
+        "PALISADES PARK BAKERY",
+        "PARISBAGUETTE",
+        "TOUS LES JOURS",
+        "TST* PARIS BAGUETTE",
+        "BELLE JOURNEE BAKERY",
+        "FRANCY'S ARTISANAL",
+        "CINNABON",
+        "LA BON BAKE SHOPPES ED"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Bakery",
+      "online": true,
+      "priority": 949
+    },
+    {
+      "id": "financial-fees",
+      "keywords": [
+        "PAYMENT RETURN FEE: ONLINE ACH PAYMENT TO RUSLAN SIVAK"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Fees",
+      "online": false,
+      "priority": 948
+    },
+    {
+      "id": "business-income-amazon-associates",
+      "keywords": [
+        "REAL TIME TRANSFER RECD FROM ABA/CONTR BNK-021000021  FROM: AMAZON.COM"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Amazon Associates",
+      "online": true,
+      "priority": 948
+    },
+    {
+      "id": "business-income-amazon-fba",
+      "keywords": [
+        "BNF-AMAZON.COM",
+        "ORIG CO NAME:AMAZON.C"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Amazon FBA",
+      "online": true,
+      "priority": 947
+    },
+    {
+      "id": "business-income-commission-junction",
+      "keywords": [
+        "MMS AS PAYCO",
+        "CJ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Business Income",
+      "subcategory": "Commission Junction",
+      "online": false,
+      "priority": 946
+    },
+    {
+      "id": "financial-transfer",
+      "keywords": [
+        "AUTOSAVE $30 TO SAVINGS MONTHLY",
+        "CAPITAL ONE      TRANSFER",
+        "ONLINE TRANSFER FROM  CHK"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Transfer",
+      "online": false,
+      "priority": 945
+    },
+    {
+      "id": "auto-tolls",
+      "keywords": [
+        "E-Z*PASSNY PAYMENT"
+      ],
+      "purchase_type": "Personal",
+      "category": "Auto",
+      "subcategory": "Tolls",
+      "online": true,
+      "priority": 944
+    },
+    {
+      "id": "home-improvement-supplies-172",
+      "keywords": [
+        "LOWES #02431"
+      ],
+      "purchase_type": "Personal",
+      "category": "Home Improvement",
+      "subcategory": "Supplies",
+      "online": false,
+      "priority": 943
+    },
+    {
+      "id": "education-swimming",
+      "keywords": [
+        "GOLDFISH SWIM SCHOOL"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Swimming",
+      "online": false,
+      "priority": 943
+    },
+    {
+      "id": "general-merchandise-pharmacy",
+      "keywords": [
+        "RITE AID 01360"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Pharmacy",
+      "online": false,
+      "priority": 942
+    },
+    {
+      "id": "food-drink-restaurant-177",
+      "keywords": [
+        "SQ *OCC READING TERMIN PHILADELPHIA PA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Restaurant",
+      "online": false,
+      "priority": 941
+    },
+    {
+      "id": "medical-allergy",
+      "keywords": [
+        "TEANECK ALLERGY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Allergy",
+      "online": false,
+      "priority": 941
+    },
+    {
+      "id": "general-merchandise-big-box",
+      "keywords": [
+        "TARGET        00023812",
+        "WM SUPERCENTER"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Big Box",
+      "online": false,
+      "priority": 940
+    },
+    {
+      "id": "utilities-water",
+      "keywords": [
+        "VEOLIANJ 855-367-6708",
+        "VEOLIA WATER NEW"
+      ],
+      "purchase_type": "Business",
+      "category": "Utilities",
+      "subcategory": "Water",
+      "online": true,
+      "priority": 939
+    },
+    {
+      "id": "education-certifications",
+      "keywords": [
+        "WHIZLABS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Certifications",
+      "online": false,
+      "priority": 938
+    },
+    {
+      "id": "education-language",
+      "keywords": [
+        "ZELLE PAYMENT TO CCCNJ JPM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Language",
+      "online": false,
+      "priority": 937
+    },
+    {
+      "id": "food-drink-liquor",
+      "keywords": [
+        "NB LIQUORS #508"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Liquor",
+      "online": false,
+      "priority": 936
+    },
+    {
+      "id": "clothing-shoes-193",
+      "keywords": [
+        "NIKEPOS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Clothing",
+      "subcategory": "Shoes",
+      "online": false,
+      "priority": 936
+    },
+    {
+      "id": "government-business-fees",
+      "keywords": [
+        "NJ BUSINES SERVICES TRENTON NJ",
+        "NJ MOTOR VEHICLE"
+      ],
+      "purchase_type": "Business",
+      "category": "Government",
+      "subcategory": "Business Fees",
+      "online": false,
+      "priority": 936
+    },
+    {
+      "id": "business-inventory-gift-cards",
+      "keywords": [
+        "PAYPAL           INST XFER  FLUZ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Business Inventory",
+      "subcategory": "Gift Cards",
+      "online": true,
+      "priority": 934
+    },
+    {
+      "id": "personal-care-haircut-201",
+      "keywords": [
+        "HAIR",
+        "BARBER",
+        "SALON"
+      ],
+      "purchase_type": "Personal",
+      "category": "Personal Care",
+      "subcategory": "Haircut",
+      "online": false,
+      "priority": 933
+    },
+    {
+      "id": "auto-service-202",
+      "keywords": [
+        "NISSAN",
+        "AUTO",
+        "MECHANIC"
+      ],
+      "purchase_type": "Personal",
+      "category": "Auto",
+      "subcategory": "Service",
+      "online": false,
+      "priority": 933
+    },
+    {
+      "id": "business-income-amazon-associates-203",
+      "keywords": [
+        "FROM: AMAZON.COM",
+        "AMAZON ASSOCIATES"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Amazon Associates",
+      "online": true,
+      "priority": 933
+    },
+    {
+      "id": "business-income-amazon-fba-204",
+      "keywords": [
+        "AMAZON FBA"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Amazon FBA",
+      "online": true,
+      "priority": 932
+    },
+    {
+      "id": "recreation-soccer",
+      "keywords": [
+        "SOCCER"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Soccer",
+      "online": false,
+      "priority": 932
+    },
+    {
+      "id": "general-merchandise-online-206",
+      "keywords": [
+        "AMAZON MARK",
+        "AMAZON.COM",
+        "AMZ* AMAZON",
+        "EBAY"
+      ],
+      "purchase_type": "Business",
+      "category": "General Merchandise",
+      "subcategory": "Online",
+      "online": true,
+      "priority": 932
+    },
+    {
+      "id": "financial-transfer-208",
+      "keywords": [
+        "MANUAL DB-BKR",
+        "ONLINE TRANSFER"
+      ],
+      "purchase_type": "Personal",
+      "category": "Financial",
+      "subcategory": "Transfer",
+      "online": false,
+      "priority": 931
+    },
+    {
+      "id": "auto-tolls-210",
+      "keywords": [
+        "E-Z*PASS"
+      ],
+      "purchase_type": "Business",
+      "category": "Auto",
+      "subcategory": "Tolls",
+      "online": true,
+      "priority": 930
+    },
+    {
+      "id": "medical-dental-211",
+      "keywords": [
+        "ORTHODONT",
+        "DDS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Dental",
+      "online": false,
+      "priority": 930
+    },
+    {
+      "id": "clothing-retail",
+      "keywords": [
+        "GAP",
+        "LUDIO",
+        "NIKE",
+        "GAP OUTLET"
+      ],
+      "purchase_type": "Personal",
+      "category": "Clothing",
+      "subcategory": "Retail",
+      "online": false,
+      "priority": 930
+    },
+    {
+      "id": "insurance-auto-213",
+      "keywords": [
+        "GEICO"
+      ],
+      "purchase_type": "Business",
+      "category": "Insurance",
+      "subcategory": "Auto",
+      "online": false,
+      "priority": 950
+    },
+    {
+      "id": "home-improvement-supplies-214",
+      "keywords": [
+        "PLUMBING"
+      ],
+      "purchase_type": "Personal",
+      "category": "Home Improvement",
+      "subcategory": "Supplies",
+      "online": false,
+      "priority": 929
+    },
+    {
+      "id": "education-swimming-215",
+      "keywords": [
+        "GOLDFISH SWIM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Swimming",
+      "online": false,
+      "priority": 929
+    },
+    {
+      "id": "professional-services-job-search-216",
+      "keywords": [
+        "LINKEDIN"
+      ],
+      "purchase_type": "Personal",
+      "category": "Professional Services",
+      "subcategory": "Job Search",
+      "online": false,
+      "priority": 928
+    },
+    {
+      "id": "food-drink-alcohol",
+      "keywords": [
+        "LIQUOR"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Alcohol",
+      "online": false,
+      "priority": 928
+    },
+    {
+      "id": "government-business-fees-218",
+      "keywords": [
+        "NJ BUSINES"
+      ],
+      "purchase_type": "Business",
+      "category": "Government",
+      "subcategory": "Business Fees",
+      "online": false,
+      "priority": 928
+    },
+    {
+      "id": "government-fees",
+      "keywords": [
+        "PASSPORT FEES",
+        "CITY OF HACKENSACK"
+      ],
+      "purchase_type": "Personal",
+      "category": "Government",
+      "subcategory": "Fees",
+      "online": false,
+      "priority": 927
+    },
+    {
+      "id": "utilities-phone",
+      "keywords": [
+        "OOMA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Utilities",
+      "subcategory": "Phone",
+      "online": false,
+      "priority": 927
+    },
+    {
+      "id": "medical-allergy-221",
+      "keywords": [
+        "IMMUNOLO"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Allergy",
+      "online": false,
+      "priority": 927
+    },
+    {
+      "id": "business-income-registrar",
+      "keywords": [
+        "GODADDY"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Registrar",
+      "online": true,
+      "priority": 926
+    },
+    {
+      "id": "business-income-adsense",
+      "keywords": [
+        "GOOGLE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Business Income",
+      "subcategory": "Adsense",
+      "online": true,
+      "priority": 926
+    },
+    {
+      "id": "business-income-rakuten",
+      "keywords": [
+        "RAKUTEN"
+      ],
+      "purchase_type": "Personal",
+      "category": "Business Income",
+      "subcategory": "Rakuten",
+      "online": false,
+      "priority": 925
+    },
+    {
+      "id": "business-inventory-gift-cards-226",
+      "keywords": [
+        "FLUZ"
+      ],
+      "purchase_type": "Personal",
+      "category": "Business Inventory",
+      "subcategory": "Gift Cards",
+      "online": false,
+      "priority": 925
+    },
+    {
+      "id": "education-chess-227",
+      "keywords": [
+        "CHESS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Chess",
+      "online": false,
+      "priority": 925
+    },
+    {
+      "id": "medical-doctors-228",
+      "keywords": [
+        "CHIRO",
+        "EYE CARE",
+        "STEVE D"
+      ],
+      "purchase_type": "Personal",
+      "category": "Medical",
+      "subcategory": "Doctors",
+      "online": false,
+      "priority": 924
+    },
+    {
+      "id": "food-drink-restaurant-229",
+      "keywords": [
+        "MANGO MANGO",
+        "OCC READING",
+        "SQ *OCC"
+      ],
+      "purchase_type": "Personal",
+      "category": "Food & Drink",
+      "subcategory": "Restaurant",
+      "online": false,
+      "priority": 924
+    },
+    {
+      "id": "general-merchandise-retail",
+      "keywords": [
+        "WAL-MART"
+      ],
+      "purchase_type": "Personal",
+      "category": "General Merchandise",
+      "subcategory": "Retail",
+      "online": false,
+      "priority": 924
+    },
+    {
+      "id": "shipping-postal",
+      "keywords": [
+        "USPS"
+      ],
+      "purchase_type": "Personal",
+      "category": "Shipping",
+      "subcategory": "Postal",
+      "online": false,
+      "priority": 923
+    },
+    {
+      "id": "utilities-water-232",
+      "keywords": [
+        "VEOLIA"
+      ],
+      "purchase_type": "Personal",
+      "category": "Utilities",
+      "subcategory": "Water",
+      "online": false,
+      "priority": 923
+    },
+    {
+      "id": "insurance-sports-233",
+      "keywords": [
+        "VI-COVERAGE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Insurance",
+      "subcategory": "Sports",
+      "online": false,
+      "priority": 923
+    },
+    {
+      "id": "business-income-refunds",
+      "keywords": [
+        "MICHELIN",
+        "EBAY COM"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Refunds",
+      "online": false,
+      "priority": 922
+    },
+    {
+      "id": "education-language-235",
+      "keywords": [
+        "CCCNJ",
+        "KAI"
+      ],
+      "purchase_type": "Personal",
+      "category": "Education",
+      "subcategory": "Language",
+      "online": false,
+      "priority": 922
+    },
+    {
+      "id": "recreation-pickleball-236",
+      "keywords": [
+        "PICKLEBALL",
+        "RAJ PROAM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Pickleball",
+      "online": false,
+      "priority": 922
+    },
+    {
+      "id": "recreation-liondance-237",
+      "keywords": [
+        "SIFU HENRY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Recreation",
+      "subcategory": "Liondance",
+      "online": false,
+      "priority": 921
+    },
+    {
+      "id": "insurance-general",
+      "keywords": [
+        "STATE FARM"
+      ],
+      "purchase_type": "Business",
+      "category": "Insurance",
+      "subcategory": "General",
+      "online": false,
+      "priority": 921
+    },
+    {
+      "id": "health-wellness-239",
+      "keywords": [
+        "RIVERSIDE ORAL SURGERY"
+      ],
+      "purchase_type": "Personal",
+      "category": "Health & Wellness",
+      "subcategory": "Oral Surgery",
+      "online": false,
+      "priority": 921
+    },
+    {
+      "id": "health-wellness-240",
+      "keywords": [
+        "ROBERT S MARCUS DPM"
+      ],
+      "purchase_type": "Personal",
+      "category": "Health & Wellness",
+      "subcategory": "Podiatry",
+      "online": false,
+      "priority": 920
+    },
+    {
+      "id": "health-wellness-241",
+      "keywords": [
+        "TENAFLY PEDIATRIC"
+      ],
+      "purchase_type": "Personal",
+      "category": "Health & Wellness",
+      "subcategory": "Pediatrics",
+      "online": false,
+      "priority": 920
+    },
+    {
+      "id": "internet",
+      "keywords": [
+        "VERIZON*RECURRING PAY"
+      ],
+      "purchase_type": "Business",
+      "category": "Internet",
+      "subcategory": "Internet Service",
+      "online": true,
+      "priority": 920
+    },
+    {
+      "id": "income",
+      "keywords": [
+        "FEDERAL RESERVEPAYROLL",
+        "ACH ELECTRONIC CREDIT FEDERAL RESERVEAP PAYMENT"
+      ],
+      "purchase_type": "Business",
+      "category": "Business Operations",
+      "subcategory": "Expense Reimbursement",
+      "online": false,
+      "priority": 919
+    },
+    {
+      "id": "income-amazon-associates",
+      "keywords": [
+        "ORIG CO NAME:AMAZON.COM, INC."
+      ],
+      "purchase_type": "Business",
+      "category": "Business Income",
+      "subcategory": "Amazon FBA",
+      "online": true,
+      "priority": 990
+    }
+  ],
+  "fallback_categories": {
+    "Food & Drink": [
+      "RESTAURANT",
+      "FOOD",
+      "CAFE",
+      "FAST FOOD",
+      "BAKERY",
+      "ICE CREAM",
+      "SUSHI"
+    ],
+    "Health & Wellness": [
+      "HEALTH & WELLNESS"
+    ],
+    "Education": [
+      "EDUCATION"
+    ],
+    "Grocery": [
+      "GROCERY",
+      "SUPERMARKET"
+    ],
+    "Auto": [
+      "AUTO",
+      "FUEL",
+      "GAS",
+      "SERVICE STATION"
+    ],
+    "Electronics": [
+      "ELECTRONIC STORES"
+    ],
+    "Clothing": [
+      "CLOTHING",
+      "SPORTS APPAREL",
+      "FAMILY CLOTHING STORE"
+    ],
+    "Subscriptions": [
+      "COMPUTER SOFTWARE STORE"
+    ],
+    "Government": [
+      "MISC GOVERNMENT SERVICES"
+    ],
+    "Recreation": [
+      "SPORTING GOODS STORES",
+      "MISC AMUSEMENT / RECREATION SERVICES"
+    ],
+    "Services": [
+      "PHOTOGRAPHIC STUDIOS",
+      "PROFESSIONAL SERVICES"
+    ],
+    "Entertainment": [
+      "DANCE HALLS,STUDIOS / SCHOOLS",
+      "CABLE,SATELLITE,PAY TV/RADIO SERVICES",
+      "TOURIST ATTRACTIONS AND EXHIBITS"
+    ],
+    "Pets": [
+      "PET SHOPS-PET FOOD / SUPPLY STORES"
+    ],
+    "General Merchandise": [
+      "VARIETY STORE",
+      "DISCOUNT STORE",
+      "MISCELLANEOUS / SPECIALTY RETAIL STORES",
+      "BOOK STORES"
+    ],
+    "Hosting": [
+      "COMPUTER NETWORK/INFO SRVS"
+    ],
+    "Travel": [
+      "HOTELS, MOTELS, RESORTS",
+      "BRIDGE AND ROAD FEES, TOLLS",
+      "LOCAL/SUBURBAN COMMUTER PASSENGER TRANS",
+      "TAXICAB/LIMOUSINE"
+    ],
+    "Medical": [
+      "DRUG STORES,PHARMACIES",
+      "MEDICAL SERVICES",
+      "OPTOMETRISTS,OPHTHALMOLOGISTS",
+      "DENTAL/LABORATORY/MEDICAL/OPHTHALMIC HOS"
+    ],
+    "Home Improvement": [
+      "HOME SUPPLY WAREHOUSE STORES"
+    ],
+    "Business Inventory": [
+      "STATIONARY, OFFICE SUPPLIES AND PRINTING",
+      "STATIONARY,OFFICE / SCHOOL SUPPLY STORES",
+      "INDUSTRIAL SUPPLIES"
+    ],
+    "Insurance": [
+      "INSURANCE-SALES / UNDERWRITING"
+    ]
+  }
+}

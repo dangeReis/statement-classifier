@@ -1,0 +1,262 @@
+{
+  "description": "Tax-aligned category structure for transaction classification",
+  "version": "1.0",
+  "categories": {
+    "Business": {
+      "Auto & Travel": [
+        "Fuel",
+        "Vehicle Maintenance",
+        "Vehicle Repair",
+        "Tolls",
+        "Parking",
+        "Auto Insurance",
+        "Vehicle Registration",
+        "Tires"
+      ],
+      "Office Expenses": [
+        "Office Supplies",
+        "Software & Subscriptions",
+        "Equipment",
+        "Furniture",
+        "Computer Hardware"
+      ],
+      "Utilities & Services": [
+        "Phone & Internet",
+        "Electric & Gas",
+        "Water",
+        "Security Services"
+      ],
+      "Professional Services": [
+        "Legal Fees",
+        "Accounting Fees",
+        "Consulting",
+        "Contractors",
+        "Freelance Services"
+      ],
+      "Advertising & Marketing": [
+        "Online Ads",
+        "Print Advertising",
+        "Marketing Services",
+        "Promotional Items"
+      ],
+      "Insurance": [
+        "Business Liability",
+        "Professional Liability",
+        "Property Insurance"
+      ],
+      "Rent & Property": [
+        "Office Rent",
+        "Storage Rent",
+        "Property Tax",
+        "HOA Fees"
+      ],
+      "Meals & Entertainment": [
+        "Business Meals",
+        "Client Entertainment"
+      ],
+      "Education & Training": [
+        "Courses & Certifications",
+        "Professional Development",
+        "Books & Publications",
+        "Training Materials"
+      ],
+      "Bank Fees & Interest": [
+        "Transaction Fees",
+        "Service Fees",
+        "Interest Charges",
+        "Return Fees",
+        "ACH Fees"
+      ],
+      "Income": [
+        "Sales Revenue",
+        "Associate Programs",
+        "FBA Revenue",
+        "AdSense Revenue",
+        "Commissions",
+        "Affiliate Income",
+        "Domain Sales",
+        "Marketplace Sales",
+        "Refunds & Credits"
+      ],
+      "Taxes": [
+        "Federal Income Tax",
+        "State Income Tax",
+        "Sales Tax",
+        "Payroll Tax"
+      ],
+      "Shipping & Postage": [
+        "USPS",
+        "Shipping Labels",
+        "Packaging Supplies"
+      ],
+      "General Merchandise": [
+        "Inventory",
+        "Supplies",
+        "Online Purchases"
+      ],
+      "Home Office": [
+        "Home Improvement",
+        "Repairs & Maintenance",
+        "HVAC Services",
+        "Plumbing"
+      ],
+      "Business Operations": [
+        "Payroll",
+        "Domain Registration",
+        "Registered Agent",
+        "Business Licenses",
+        "Government Fees",
+        "Gift Cards & Incentives",
+        "Coupons & Discounts"
+      ]
+    },
+    "Personal": {
+      "Food & Dining": [
+        "Groceries",
+        "Restaurants",
+        "Fast Food",
+        "Coffee & Cafe",
+        "Bakery",
+        "Ice Cream & Desserts",
+        "Sushi & Asian Food",
+        "Alcohol & Liquor"
+      ],
+      "Healthcare": [
+        "Doctor Visits",
+        "Dental Care",
+        "Vision Care",
+        "Pharmacy",
+        "Medical Supplies",
+        "Chiropractor",
+        "Allergy Treatment",
+        "Health & Wellness",
+        "Pet Healthcare"
+      ],
+      "Home & Utilities": [
+        "Mortgage & Rent",
+        "Electric & Gas",
+        "Water",
+        "Home Maintenance",
+        "Home Improvement",
+        "Home Security",
+        "Furniture & Decor"
+      ],
+      "Transportation": [
+        "Auto Fuel",
+        "Auto Service",
+        "Auto Insurance",
+        "Public Transit",
+        "Ride Share",
+        "Parking",
+        "Tolls"
+      ],
+      "Entertainment & Recreation": [
+        "Movies & Streaming",
+        "Sports Activities",
+        "Pickleball",
+        "Soccer",
+        "Swimming",
+        "Martial Arts",
+        "Chess",
+        "Sporting Goods",
+        "Gym & Fitness"
+      ],
+      "Shopping": [
+        "Clothing",
+        "Shoes",
+        "General Merchandise",
+        "Online Shopping",
+        "Department Stores"
+      ],
+      "Education": [
+        "Tuition & Classes",
+        "School Supplies",
+        "Books",
+        "Language Learning",
+        "Auto School",
+        "Professional Development"
+      ],
+      "Financial": [
+        "Transfers",
+        "Investments",
+        "Retirement Contributions",
+        "Bank Fees",
+        "Credit Card Payments",
+        "Interest & Dividends",
+        "Checks & Deposits"
+      ],
+      "Income": [
+        "Salary",
+        "Benefits & Reimbursements",
+        "Interest Income",
+        "Unemployment",
+        "Tax Refunds"
+      ],
+      "Insurance": [
+        "Health Insurance",
+        "Life Insurance",
+        "Sports Insurance",
+        "Other Insurance"
+      ],
+      "Personal Care": [
+        "Haircut & Salon",
+        "Spa Services"
+      ],
+      "Travel": [
+        "Lodging",
+        "Flights",
+        "Transportation"
+      ],
+      "Pets": [
+        "Pet Supplies",
+        "Veterinary"
+      ],
+      "Professional Services": [
+        "Job Search",
+        "Resume Services"
+      ],
+      "Government": [
+        "Passport Fees",
+        "License Fees",
+        "Government Services"
+      ],
+      "Subscriptions": [
+        "Streaming Services",
+        "Software",
+        "Publications",
+        "Memberships"
+      ]
+    }
+  },
+  "mappings": {
+    "description": "Mapping from old v3 categories to new tax-aligned categories",
+    "notes": "Use this for automated migration of existing rules",
+    "rules": {
+      "Bank Fees": {"purchase_type": "Business", "category": "Bank Fees & Interest", "subcategory": "Transaction Fees"},
+      "Hair Cut": {"purchase_type": "Personal", "category": "Personal Care", "subcategory": "Haircut & Salon"},
+      "Car Maintenance and Repair": {"purchase_type": "Business", "category": "Auto & Travel", "subcategory": "Vehicle Maintenance"},
+      "Income Associates": {"purchase_type": "Business", "category": "Income", "subcategory": "Associate Programs"},
+      "Income FBA": {"purchase_type": "Business", "category": "Income", "subcategory": "FBA Revenue"},
+      "Recreation Soccer": {"purchase_type": "Personal", "category": "Entertainment & Recreation", "subcategory": "Soccer"},
+      "Grocery Supermarket": {"purchase_type": "Personal", "category": "Food & Dining", "subcategory": "Groceries"},
+      "General Merchandise": {"purchase_type": "Business", "category": "General Merchandise", "subcategory": "Online Purchases"},
+      "Entertainment Movies": {"purchase_type": "Personal", "category": "Entertainment & Recreation", "subcategory": "Movies & Streaming"},
+      "Financial Transfer": {"purchase_type": "Personal", "category": "Financial", "subcategory": "Transfers"},
+      "Auto Education": {"purchase_type": "Personal", "category": "Education", "subcategory": "Auto School"},
+      "Auto/Tolls": {"purchase_type": "Business", "category": "Auto & Travel", "subcategory": "Tolls"},
+      "Health Dental": {"purchase_type": "Personal", "category": "Healthcare", "subcategory": "Dental Care"},
+      "Insurance Auto": {"purchase_type": "Business", "category": "Auto & Travel", "subcategory": "Auto Insurance"},
+      "Home Improvement": {"purchase_type": "Business", "category": "Home Office", "subcategory": "Home Improvement"},
+      "Education Swimming": {"purchase_type": "Personal", "category": "Entertainment & Recreation", "subcategory": "Swimming"},
+      "Job Search Fees": {"purchase_type": "Personal", "category": "Professional Services", "subcategory": "Job Search"},
+      "Government Fees": {"purchase_type": "Business", "category": "Business Operations", "subcategory": "Government Fees"},
+      "Phone Service": {"purchase_type": "Business", "category": "Utilities & Services", "subcategory": "Phone & Internet"},
+      "Education Certifications": {"purchase_type": "Business", "category": "Education & Training", "subcategory": "Courses & Certifications"},
+      "Auto Tires": {"purchase_type": "Business", "category": "Auto & Travel", "subcategory": "Tires"},
+      "Shipping": {"purchase_type": "Business", "category": "Shipping & Postage", "subcategory": "USPS"},
+      "State Taxes": {"purchase_type": "Business", "category": "Taxes", "subcategory": "State Income Tax"},
+      "Federal Tax": {"purchase_type": "Business", "category": "Taxes", "subcategory": "Federal Income Tax"},
+      "Home Property Tax": {"purchase_type": "Business", "category": "Rent & Property", "subcategory": "Property Tax"}
+    }
+  }
+}

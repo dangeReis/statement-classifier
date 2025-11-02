@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Transaction Classification Rules Schema v4",
+  "description": "Schema for transaction classification rules optimized for tax preparation",
+  "type": "object",
+  "required": ["version", "rules"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "4.0",
+      "description": "Schema version number"
+    },
+    "rules": {
+      "type": "array",
+      "description": "Array of classification rules",
+      "items": {
+        "$ref": "#/definitions/rule"
+      }
+    },
+    "fallback_categories": {
+      "type": "object",
+      "description": "Fallback category mappings based on merchant category codes",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "rule": {
+      "type": "object",
+      "required": ["id", "keywords", "purchase_type", "category"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Unique identifier for the rule (lowercase, hyphens allowed)"
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Keywords must be UPPERCASE for matching"
+          },
+          "description": "List of keywords that trigger this rule"
+        },
+        "purchase_type": {
+          "type": "string",
+          "enum": ["Business", "Personal"],
+          "description": "Whether this is a business or personal expense"
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "High-level category (e.g., 'Auto & Travel', 'Office Expenses')"
+        },
+        "subcategory": {
+          "type": "string",
+          "description": "Specific subcategory within the category (optional)"
+        },
+        "online": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is typically an online purchase"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000,
+          "default": 50,
+          "description": "Rule priority (higher = checked first, 1-1000)"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional notes about this rule"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Optional tags for categorization and searching"
+        }
+      }
+    }
+  }
+}
