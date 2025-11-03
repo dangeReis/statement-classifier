@@ -2621,6 +2621,30 @@
       "subcategory": "Amazon FBA",
       "online": true,
       "priority": 990
+    },
+    {
+      "id": "test-rule",
+      "keywords": [
+        "TEST",
+        "EXAMPLE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Testing",
+      "subcategory": "",
+      "online": false,
+      "priority": 1000
+    },
+    {
+      "id": "test-rule-123",
+      "keywords": [
+        "TEST",
+        "EXAMPLE"
+      ],
+      "purchase_type": "Personal",
+      "category": "Testing",
+      "subcategory": "",
+      "online": false,
+      "priority": 1000
     }
   ],
   "fallback_categories": {

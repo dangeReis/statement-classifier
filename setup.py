@@ -18,6 +18,11 @@ setup(
     url="https://github.com/dangeReis/statement-classifier",
     packages=find_packages(),
     python_requires=">=3.8",
+    entry_points={
+        "console_scripts": [
+            "statement-classifier=bin.cli.main:main",
+        ],
+    },
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
