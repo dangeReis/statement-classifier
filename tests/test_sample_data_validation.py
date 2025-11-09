@@ -208,19 +208,72 @@ class TestSampleDataValidation(unittest.TestCase):
 
     def test_csv_data_matches_json(self):
         """Verify CSV test data matches JSON test data."""
-        # Count total test cases
-        json_count = sum(
-            len(suite)
-            for suite in self.json_data['test_suites'].values()
-        )
-        csv_count = len(self.csv_data)
+        # Flatten JSON data for comparison
+        json_records = []
+        for suite_name, test_cases in self.json_data['test_suites'].items():
+            for test_case in test_cases:
+                json_records.append({
+                    'description': test_case['description'],
+                    'category': test_case['category'],
+                    'expected_purchase_type': test_case['expected']['purchase_type'],
+                    'expected_category': test_case['expected']['category'],
+                    'expected_subcategory': test_case['expected']['subcategory'],
+                    'expected_online': str(test_case['expected']['online']).lower()
+                })
 
         # Should have same number of test cases
         self.assertEqual(
-            json_count,
-            csv_count,
+            len(json_records),
+            len(self.csv_data),
             "CSV and JSON should have same number of test cases"
         )
+
+        # Create lookup dict for comparison
+        json_lookup = {
+            (r['description'], r['category']): r
+            for r in json_records
+        }
+        csv_lookup = {
+            (r['description'], r['category']): r
+            for r in self.csv_data
+        }
+
+        # Check for records in JSON but not CSV
+        json_only = set(json_lookup.keys()) - set(csv_lookup.keys())
+        if json_only:
+            self.fail(f"Records in JSON but not CSV: {json_only}")
+
+        # Check for records in CSV but not JSON
+        csv_only = set(csv_lookup.keys()) - set(json_lookup.keys())
+        if csv_only:
+            self.fail(f"Records in CSV but not JSON: {csv_only}")
+
+        # Compare content of matching records
+        for key in json_lookup:
+            json_record = json_lookup[key]
+            csv_record = csv_lookup[key]
+
+            with self.subTest(description=key[0], category=key[1]):
+                self.assertEqual(
+                    json_record['expected_purchase_type'],
+                    csv_record['expected_purchase_type'],
+                    f"Purchase type mismatch for {key}"
+                )
+                self.assertEqual(
+                    json_record['expected_category'],
+                    csv_record['expected_category'],
+                    f"Category mismatch for {key}"
+                )
+                self.assertEqual(
+                    json_record['expected_subcategory'],
+                    csv_record['expected_subcategory'],
+                    f"Subcategory mismatch for {key}"
+                )
+                self.assertEqual(
+                    json_record['expected_online'],
+                    csv_record['expected_online'],
+                    f"Online flag mismatch for {key}"
+                )
 
     def test_all_csv_transactions(self):
         """Test all transactions from CSV file."""
