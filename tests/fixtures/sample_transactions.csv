@@ -61,7 +61,7 @@ AMAZON.COM* WALMART.COM,PURCHASE,Business,General Merchandise,Online Purchases,t
 test lowercase merchant,purchase,Personal,,,false,Lowercase normalization test,edge_cases
   AMAZON.COM*  ,"  PURCHASE  ",Business,General Merchandise,Online Purchases,true,Whitespace trimming test,edge_cases
 ZELLE PAYMENT TO MICHAEL,PAYMENT,Personal,Medical Doctors,General Practice,false,Partial keyword matching,edge_cases
-ORIG CO NAME:AMAZON.COM INC.,ACH CREDIT,Business,Business Income,Amazon FBA,true,Special characters in merchant name,edge_cases
+"ORIG CO NAME:AMAZON.COM, INC.",ACH CREDIT,Business,Business Income,Amazon FBA,true,Special characters in merchant name,edge_cases
 PHR*ENTANDALLERGYASSOCIAT TEST,MEDICAL,Personal,Health & Wellness,Allergy Care,false,Priority 1000 - highest priority,priority_testing
 STANDARD ACH PMNTS FEE,FEE,Business,Bank Fees & Interest,Transaction Fees,false,Priority 1000 - bank fees,priority_testing
 RIVERSIDE NISSAN SERVICE,AUTO,Business,Car Maintenance and Repair,Business,false,Priority 999 - very high,priority_testing

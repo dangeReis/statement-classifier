@@ -82,12 +82,12 @@ test-phase4:
 
 # Lint code
 lint:
-	@echo "Running linters..."
-	@echo "→ flake8..."
-	-flake8 statement_classifier/ bin/ tests/ --max-line-length=100 --extend-ignore=E203,W503
-	@echo "→ pylint..."
-	-pylint statement_classifier/ bin/*.py --max-line-length=100 --disable=C0114,C0115,C0116
-	@echo "✓ Linting complete"
+@echo "Running linters..."
+@echo "→ flake8..."
+flake8 statement_classifier/ bin/ tests/ --max-line-length=100 --extend-ignore=E203,W503
+@echo "→ pylint..."
+pylint statement_classifier/ bin/*.py --max-line-length=100 --disable=C0114,C0115,C0116
+@echo "✓ Linting complete"
 
 # Format code with black
 fmt:

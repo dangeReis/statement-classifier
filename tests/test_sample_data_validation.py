@@ -208,18 +208,55 @@ class TestSampleDataValidation(unittest.TestCase):
 
     def test_csv_data_matches_json(self):
         """Verify CSV test data matches JSON test data."""
-        # Count total test cases
-        json_count = sum(
-            len(suite)
-            for suite in self.json_data['test_suites'].values()
-        )
-        csv_count = len(self.csv_data)
+        def normalize_record(record):
+            """Return a tuple representing a normalized record for comparison."""
+            return (
+                record['test_suite'],
+                record['description'],
+                record['category'],
+                record['expected_purchase_type'],
+                record['expected_category'],
+                record['expected_subcategory'],
+                record['expected_online'],
+            )
 
-        # Should have same number of test cases
+        csv_records = [
+            {
+                'test_suite': row.get('test_suite', ''),
+                'description': row['description'],
+                'category': row['category'],
+                'expected_purchase_type': row['expected_purchase_type'],
+                'expected_category': row['expected_category'],
+                'expected_subcategory': row['expected_subcategory'],
+                'expected_online': row['expected_online'].strip().lower() in {'true', '1', 'yes'},
+            }
+            for row in self.csv_data
+        ]
+
+        json_records = []
+        for suite_name, test_cases in self.json_data['test_suites'].items():
+            for test_case in test_cases:
+                expected = test_case['expected']
+                json_records.append({
+                    'test_suite': suite_name,
+                    'description': test_case['description'],
+                    'category': test_case['category'],
+                    'expected_purchase_type': expected['purchase_type'],
+                    'expected_category': expected['category'],
+                    'expected_subcategory': expected['subcategory'],
+                    'expected_online': expected['online'],
+                })
+
         self.assertEqual(
-            json_count,
-            csv_count,
-            "CSV and JSON should have same number of test cases"
+            len(json_records),
+            len(csv_records),
+            "CSV and JSON should have same number of test cases",
+        )
+
+        self.assertEqual(
+            sorted(normalize_record(record) for record in json_records),
+            sorted(normalize_record(record) for record in csv_records),
+            "CSV and JSON fixtures should contain identical records",
         )
 
     def test_all_csv_transactions(self):
