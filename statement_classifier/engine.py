@@ -160,13 +160,27 @@ class ClassificationEngine:
         if not category or not fallback_map:
             return None
 
-        # Direct category match
-        if category in fallback_map:
+        # Direct category match when map is code -> category string
+        if category in fallback_map and isinstance(fallback_map[category], str):
             return {
                 'purchase_type': 'Personal',
                 'category': fallback_map[category],
                 'subcategory': '',
                 'online': False
             }
+
+        # Support v4 rules where fallback map stores category -> [codes]
+        for fallback_category, codes in fallback_map.items():
+            if not isinstance(codes, (list, tuple)):
+                continue
+
+            normalized_codes = [code.upper().strip() for code in codes if code]
+            if category in normalized_codes:
+                return {
+                    'purchase_type': 'Personal',
+                    'category': fallback_category,
+                    'subcategory': '',
+                    'online': False
+                }
 
         return None

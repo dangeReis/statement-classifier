@@ -619,7 +619,7 @@
         "notes": "Multiple keywords - highest priority should win (AMAZON priority 998)"
       },
       {
-        "description": "test lowercase merchant",
+        "description": "trial lowercase merchant",
         "category": "purchase",
         "expected": {
           "purchase_type": "Personal",
