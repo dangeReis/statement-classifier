@@ -1,0 +1,71 @@
+description,category,expected_purchase_type,expected_category,expected_subcategory,expected_online,notes,test_suite
+FROM: AMAZON.COM REF: 12345,DEPOSIT,Business,Income,Associate Programs,true,Amazon Associates income,business_income
+ORIG CO NAME:AMAZON.CEMB5BZA4,ACH CREDIT,Business,Business Income,Amazon FBA,true,Amazon FBA revenue,business_income
+ACH ELECTRONIC CREDIT EBAY,DEPOSIT,Business,Business Income,eBay Sales,false,eBay sales revenue,business_income
+ORIG CO NAME:GOOGLE ADSENSE,ACH CREDIT,Business,Business Income,AdSense Revenue,true,Google AdSense income,business_income
+ORIG CO NAME:GODADDY.COM LLC,ACH CREDIT,Business,Business Income,Domain Reseller Revenue,true,GoDaddy domain reseller,business_income
+AMAZON.COM* NH4S31RG1,PURCHASE,Business,General Merchandise,Online Purchases,true,Amazon online purchase,business_expenses
+E-Z*PASSNY REBILL,PURCHASE,Business,Auto & Travel,Tolls,true,EZ Pass toll payment,business_expenses
+GEICO *AUTO INS,PURCHASE,Business,Auto & Travel,Auto Insurance,true,Auto insurance payment,business_expenses
+LOWES #02431 PARAMUS NJ,PURCHASE,Business,Home Office,Home Improvement,false,Lowes home improvement,business_expenses
+STAPLES 12345 FORT LEE NJ,PURCHASE,Business,Business Inventory,Office Supplies,true,Staples office supplies,business_expenses
+AWS AMAZON WEB SERVICES,PURCHASE,Business,Hosting,Cloud,true,AWS cloud hosting,business_expenses
+GOOGLE *ADS1234567,PURCHASE,Business,Advertising,Marketing,true,Google Ads marketing,business_expenses
+USPS PO 07024,PURCHASE,Business,Shipping & Postage,USPS,false,USPS shipping,business_expenses
+VEOLIANJ 855-367-6708,UTILITY,Business,Utility Water,Water Service,true,Water utility,business_expenses
+PSEG ELECTRIC BILL,UTILITY,Business,Utility,Electric/Gas,false,Electric utility,business_expenses
+IRS TREAS 310 TAX REF,TAX PAYMENT,Business,Taxes,Federal Income Tax,false,Federal tax payment,business_taxes
+NYS DTF PIT TAX PAYMNT,TAX PAYMENT,Business,Taxes,State Income Tax,false,NY state tax,business_taxes
+NJ WEB PMT BUSINESS TAX,TAX PAYMENT,Business,Taxes,State Income Tax,false,NJ state tax,business_taxes
+STANDARD ACH PMNTS,FEE,Business,Bank Fees & Interest,Transaction Fees,false,ACH transaction fee,business_fees
+PAYMENT RETURN FEE,FEE,Business,Bank Fees & Interest,Transaction Fees,false,Payment return fee,business_fees
+NJ MOTOR VEHICLE PAY,GOVERNMENT,Business,Business Operations,Government Fees,false,DMV registration,business_fees
+AMAZON FRESH ORDER,GROCERY,Personal,Food & Dining,Groceries,true,Amazon Fresh grocery,personal_food
+SHOPRITE LODI NJ,GROCERY,Personal,Grocery,Supermarket,false,ShopRite grocery,personal_food
+H MART FORT LEE LLC FORT LEE NJ,GROCERY,Personal,Grocery,Supermarket,false,H Mart grocery,personal_food
+MCDONALDS F12345,RESTAURANT,Personal,Food & Drink,Restaurant,true,McDonald's fast food,personal_food
+SAKE RESTAURANT INC,RESTAURANT,Personal,Food and Drink Sushi,Sushi Restaurant,false,Sushi restaurant,personal_food
+PARIS BAGUETTE CAFE,BAKERY,Personal,Food & Drink,Bakery,true,Bakery cafe,personal_food
+TST* THE BRICKERY,DESSERT,Personal,Food and Drink Ice Cream,Ice Cream Shop,false,Ice cream shop,personal_food
+NB LIQUORS #508,LIQUOR,Personal,Food and Drink Alcohol,Liquor Store,false,Liquor store,personal_food
+PHR*ENTANDALLERGYASSOCIAT,MEDICAL,Personal,Health & Wellness,Allergy Care,false,Allergy treatment,personal_healthcare
+STEVE D KIM DDS LEONIA NJ,DENTAL,Personal,Healthcare,Dental Care,false,Dentist visit,personal_healthcare
+CVS/PHARMACY #12345,PHARMACY,Personal,Medical,Pharmacy,true,Pharmacy purchase,personal_healthcare
+SQ *ENVISION EYE CARE,MEDICAL,Personal,Glasses,Vision Care,false,Eye care visit,personal_healthcare
+ORADELL FORT LEE ANIMAL,VETERINARY,Personal,Medical Pets,Veterinary,false,Veterinary visit,personal_healthcare
+CPP*WORLD CLASS SOCCER,RECREATION,Personal,Entertainment & Recreation,Soccer,true,Soccer program,personal_recreation
+ICP*GOLDFISH SWIM SCHOOL,RECREATION,Personal,Entertainment & Recreation,Swimming,false,Swimming lessons,personal_recreation
+PRESTIGE PICKLEBALL,RECREATION,Personal,Recreation,Sports,true,Pickleball league,personal_recreation
+PAYPAL *CHESS INTL,EDUCATION,Personal,Education Chess,Chess Classes,true,Chess classes,personal_recreation
+ATI*10415-21320006 8448386284 CA,ENTERTAINMENT,Personal,Entertainment & Recreation,Movies & Streaming,true,Movie streaming,personal_recreation
+HULU SUBSCRIPTION,STREAMING,Personal,Entertainment,Streaming,true,Hulu subscription,personal_recreation
+GAP OUTLET.COM ORDER,CLOTHING,Personal,Clothing,Apparel,true,Gap clothing online,personal_shopping
+NIKEPOS_US PARAMUS NJ,CLOTHING,Personal,Clothing Shoes,Athletic Shoes,false,Nike shoes in-store,personal_shopping
+TARGET 00023812,GENERAL MERCHANDISE,Business,General Merchandise,Online Purchases,false,Target purchase,personal_shopping
+COSTCO WHSE #123,WAREHOUSE,Personal,General Merchandise,Warehouse,false,Costco warehouse,personal_shopping
+GREAT CLIPS HAIRCUT,PERSONAL CARE,Personal,Personal Care,Haircut,false,Haircut service,personal_services
+UBER *TRIP 12345,TRANSPORTATION,Personal,Travel,Taxi/Ride Share,true,Uber ride,personal_services
+SHELL OIL FUEL STOP,AUTO,Business,Auto,Fuel,false,Gas purchase,personal_services
+LINKEDIN PRE SUBSCRIPTION,PROFESSIONAL,Personal,Professional Services,Job Search,false,LinkedIn Premium,personal_services
+AUTOSAVE $30 TO SAVINGS MONTHLY,TRANSFER,Personal,Financial,Transfers,false,Savings transfer,personal_financial
+CHASE CREDIT CRD PAYMENT,PAYMENT,Personal,Financial,Payment,false,Credit card payment,personal_financial
+ATM WITHDRAWAL 123456,WITHDRAWAL,Personal,Financial,Withdrawal,false,ATM withdrawal,personal_financial
+INTEREST PAID FOR DEC,INTEREST,Personal,Financial,Interest Income,false,Interest earned,personal_financial
+VANGUARD BUY VFIAX,INVESTMENT,Personal,Investment IRA,IRA Contributions,false,IRA contribution,personal_financial
+MOODY'S RISK PAYROLL,PAYROLL,Personal,Income,Payroll Income,false,Payroll deposit,personal_income
+UI UEMPLOYMEN BENEFIT,BENEFITS,Personal,Income,Unemployment Benefits,false,Unemployment income,personal_income
+IRS TREAS 310 TAX REF,TAX REFUND,Business,Taxes,Federal Income Tax,false,Tax refund,personal_income
+"",PURCHASE,Personal,,,false,Empty description fallback,edge_cases
+UNKNOWN MERCHANT 12345,"",Personal,,,false,Unknown merchant no category,edge_cases
+AMAZON.COM* WALMART.COM,PURCHASE,Business,General Merchandise,Online Purchases,true,Multiple keywords - highest priority wins,edge_cases
+test lowercase merchant,purchase,Personal,,,false,Lowercase normalization test,edge_cases
+  AMAZON.COM*  ,"  PURCHASE  ",Business,General Merchandise,Online Purchases,true,Whitespace trimming test,edge_cases
+ZELLE PAYMENT TO MICHAEL,PAYMENT,Personal,Medical Doctors,General Practice,false,Partial keyword matching,edge_cases
+ORIG CO NAME:AMAZON.COM INC.,ACH CREDIT,Business,Business Income,Amazon FBA,true,Special characters in merchant name,edge_cases
+PHR*ENTANDALLERGYASSOCIAT TEST,MEDICAL,Personal,Health & Wellness,Allergy Care,false,Priority 1000 - highest priority,priority_testing
+STANDARD ACH PMNTS FEE,FEE,Business,Bank Fees & Interest,Transaction Fees,false,Priority 1000 - bank fees,priority_testing
+RIVERSIDE NISSAN SERVICE,AUTO,Business,Car Maintenance and Repair,Business,false,Priority 999 - very high,priority_testing
+AMAZON.COM*12345,PURCHASE,Business,General Merchandise,Online Purchases,true,Online purchase flag test,online_flag_testing
+WALMART.COM ORDER,PURCHASE,Business,General Merchandise,Online Purchases,true,Online purchase flag test,online_flag_testing
+TARGET 00023812,PURCHASE,Business,General Merchandise,Online Purchases,false,In-store purchase flag test,online_flag_testing
+SHOPRITE LODI,GROCERY,Personal,Grocery,Supermarket,false,In-store grocery flag test,online_flag_testing

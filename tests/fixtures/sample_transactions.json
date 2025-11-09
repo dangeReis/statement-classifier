@@ -1,0 +1,748 @@
+{
+  "description": "Comprehensive test data for transaction classification and export validation",
+  "version": "1.0",
+  "test_suites": {
+    "business_income": [
+      {
+        "description": "FROM: AMAZON.COM REF: 12345",
+        "category": "DEPOSIT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Income",
+          "subcategory": "Associate Programs",
+          "online": true
+        }
+      },
+      {
+        "description": "ORIG CO NAME:AMAZON.CEMB5BZA4",
+        "category": "ACH CREDIT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Income",
+          "subcategory": "Amazon FBA",
+          "online": true
+        }
+      },
+      {
+        "description": "ACH ELECTRONIC CREDIT EBAY",
+        "category": "DEPOSIT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Income",
+          "subcategory": "eBay Sales",
+          "online": false
+        }
+      },
+      {
+        "description": "ORIG CO NAME:GOOGLE ADSENSE",
+        "category": "ACH CREDIT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Income",
+          "subcategory": "AdSense Revenue",
+          "online": true
+        }
+      },
+      {
+        "description": "ORIG CO NAME:GODADDY.COM LLC",
+        "category": "ACH CREDIT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Income",
+          "subcategory": "Domain Reseller Revenue",
+          "online": true
+        }
+      }
+    ],
+    "business_expenses": [
+      {
+        "description": "AMAZON.COM* NH4S31RG1",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": true
+        }
+      },
+      {
+        "description": "E-Z*PASSNY REBILL",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Auto & Travel",
+          "subcategory": "Tolls",
+          "online": true
+        }
+      },
+      {
+        "description": "GEICO *AUTO INS",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Auto & Travel",
+          "subcategory": "Auto Insurance",
+          "online": true
+        }
+      },
+      {
+        "description": "LOWES #02431 PARAMUS NJ",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Home Office",
+          "subcategory": "Home Improvement",
+          "online": false
+        }
+      },
+      {
+        "description": "STAPLES 12345 FORT LEE NJ",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Inventory",
+          "subcategory": "Office Supplies",
+          "online": true
+        }
+      },
+      {
+        "description": "AWS AMAZON WEB SERVICES",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Hosting",
+          "subcategory": "Cloud",
+          "online": true
+        }
+      },
+      {
+        "description": "GOOGLE *ADS1234567",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Advertising",
+          "subcategory": "Marketing",
+          "online": true
+        }
+      },
+      {
+        "description": "USPS PO 07024",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Shipping & Postage",
+          "subcategory": "USPS",
+          "online": false
+        }
+      },
+      {
+        "description": "VEOLIANJ 855-367-6708",
+        "category": "UTILITY",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Utility Water",
+          "subcategory": "Water Service",
+          "online": true
+        }
+      },
+      {
+        "description": "PSEG ELECTRIC BILL",
+        "category": "UTILITY",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Utility",
+          "subcategory": "Electric/Gas",
+          "online": false
+        }
+      }
+    ],
+    "business_taxes": [
+      {
+        "description": "IRS TREAS 310 TAX REF",
+        "category": "TAX PAYMENT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Taxes",
+          "subcategory": "Federal Income Tax",
+          "online": false
+        }
+      },
+      {
+        "description": "NYS DTF PIT TAX PAYMNT",
+        "category": "TAX PAYMENT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Taxes",
+          "subcategory": "State Income Tax",
+          "online": false
+        }
+      },
+      {
+        "description": "NJ WEB PMT BUSINESS TAX",
+        "category": "TAX PAYMENT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Taxes",
+          "subcategory": "State Income Tax",
+          "online": false
+        }
+      }
+    ],
+    "business_fees": [
+      {
+        "description": "STANDARD ACH PMNTS",
+        "category": "FEE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Bank Fees & Interest",
+          "subcategory": "Transaction Fees",
+          "online": false
+        }
+      },
+      {
+        "description": "PAYMENT RETURN FEE",
+        "category": "FEE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Bank Fees & Interest",
+          "subcategory": "Transaction Fees",
+          "online": false
+        }
+      },
+      {
+        "description": "NJ MOTOR VEHICLE PAY",
+        "category": "GOVERNMENT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Operations",
+          "subcategory": "Government Fees",
+          "online": false
+        }
+      }
+    ],
+    "personal_food": [
+      {
+        "description": "AMAZON FRESH ORDER",
+        "category": "GROCERY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Food & Dining",
+          "subcategory": "Groceries",
+          "online": true
+        }
+      },
+      {
+        "description": "SHOPRITE LODI NJ",
+        "category": "GROCERY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Grocery",
+          "subcategory": "Supermarket",
+          "online": false
+        }
+      },
+      {
+        "description": "H MART FORT LEE LLC FORT LEE NJ",
+        "category": "GROCERY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Grocery",
+          "subcategory": "Supermarket",
+          "online": false
+        }
+      },
+      {
+        "description": "MCDONALDS F12345",
+        "category": "RESTAURANT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Food & Drink",
+          "subcategory": "Restaurant",
+          "online": true
+        }
+      },
+      {
+        "description": "SAKE RESTAURANT INC",
+        "category": "RESTAURANT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Food and Drink Sushi",
+          "subcategory": "Sushi Restaurant",
+          "online": false
+        }
+      },
+      {
+        "description": "PARIS BAGUETTE CAFE",
+        "category": "BAKERY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Food & Drink",
+          "subcategory": "Bakery",
+          "online": true
+        }
+      },
+      {
+        "description": "TST* THE BRICKERY",
+        "category": "DESSERT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Food and Drink Ice Cream",
+          "subcategory": "Ice Cream Shop",
+          "online": false
+        }
+      },
+      {
+        "description": "NB LIQUORS #508",
+        "category": "LIQUOR",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Food and Drink Alcohol",
+          "subcategory": "Liquor Store",
+          "online": false
+        }
+      }
+    ],
+    "personal_healthcare": [
+      {
+        "description": "PHR*ENTANDALLERGYASSOCIAT",
+        "category": "MEDICAL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Health & Wellness",
+          "subcategory": "Allergy Care",
+          "online": false
+        }
+      },
+      {
+        "description": "STEVE D KIM DDS LEONIA NJ",
+        "category": "DENTAL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Healthcare",
+          "subcategory": "Dental Care",
+          "online": false
+        }
+      },
+      {
+        "description": "CVS/PHARMACY #12345",
+        "category": "PHARMACY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Medical",
+          "subcategory": "Pharmacy",
+          "online": true
+        }
+      },
+      {
+        "description": "SQ *ENVISION EYE CARE",
+        "category": "MEDICAL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Glasses",
+          "subcategory": "Vision Care",
+          "online": false
+        }
+      },
+      {
+        "description": "ORADELL FORT LEE ANIMAL",
+        "category": "VETERINARY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Medical Pets",
+          "subcategory": "Veterinary",
+          "online": false
+        }
+      }
+    ],
+    "personal_recreation": [
+      {
+        "description": "CPP*WORLD CLASS SOCCER",
+        "category": "RECREATION",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Entertainment & Recreation",
+          "subcategory": "Soccer",
+          "online": true
+        }
+      },
+      {
+        "description": "ICP*GOLDFISH SWIM SCHOOL",
+        "category": "RECREATION",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Entertainment & Recreation",
+          "subcategory": "Swimming",
+          "online": false
+        }
+      },
+      {
+        "description": "PRESTIGE PICKLEBALL",
+        "category": "RECREATION",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Recreation",
+          "subcategory": "Sports",
+          "online": true
+        }
+      },
+      {
+        "description": "PAYPAL *CHESS INTL",
+        "category": "EDUCATION",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Education Chess",
+          "subcategory": "Chess Classes",
+          "online": true
+        }
+      },
+      {
+        "description": "ATI*10415-21320006 8448386284 CA",
+        "category": "ENTERTAINMENT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Entertainment & Recreation",
+          "subcategory": "Movies & Streaming",
+          "online": true
+        }
+      },
+      {
+        "description": "HULU SUBSCRIPTION",
+        "category": "STREAMING",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Entertainment",
+          "subcategory": "Streaming",
+          "online": true
+        }
+      }
+    ],
+    "personal_shopping": [
+      {
+        "description": "GAP OUTLET.COM ORDER",
+        "category": "CLOTHING",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Clothing",
+          "subcategory": "Apparel",
+          "online": true
+        }
+      },
+      {
+        "description": "NIKEPOS_US PARAMUS NJ",
+        "category": "CLOTHING",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Clothing Shoes",
+          "subcategory": "Athletic Shoes",
+          "online": false
+        }
+      },
+      {
+        "description": "TARGET 00023812",
+        "category": "GENERAL MERCHANDISE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": false
+        }
+      },
+      {
+        "description": "COSTCO WHSE #123",
+        "category": "WAREHOUSE",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "General Merchandise",
+          "subcategory": "Warehouse",
+          "online": false
+        }
+      }
+    ],
+    "personal_services": [
+      {
+        "description": "GREAT CLIPS HAIRCUT",
+        "category": "PERSONAL CARE",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Personal Care",
+          "subcategory": "Haircut",
+          "online": false
+        }
+      },
+      {
+        "description": "UBER *TRIP 12345",
+        "category": "TRANSPORTATION",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Travel",
+          "subcategory": "Taxi/Ride Share",
+          "online": true
+        }
+      },
+      {
+        "description": "SHELL OIL FUEL STOP",
+        "category": "AUTO",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Auto",
+          "subcategory": "Fuel",
+          "online": false
+        }
+      },
+      {
+        "description": "LINKEDIN PRE SUBSCRIPTION",
+        "category": "PROFESSIONAL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Professional Services",
+          "subcategory": "Job Search",
+          "online": false
+        }
+      }
+    ],
+    "personal_financial": [
+      {
+        "description": "AUTOSAVE $30 TO SAVINGS MONTHLY",
+        "category": "TRANSFER",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Financial",
+          "subcategory": "Transfers",
+          "online": false
+        }
+      },
+      {
+        "description": "CHASE CREDIT CRD PAYMENT",
+        "category": "PAYMENT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Financial",
+          "subcategory": "Payment",
+          "online": false
+        }
+      },
+      {
+        "description": "ATM WITHDRAWAL 123456",
+        "category": "WITHDRAWAL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Financial",
+          "subcategory": "Withdrawal",
+          "online": false
+        }
+      },
+      {
+        "description": "INTEREST PAID FOR DEC",
+        "category": "INTEREST",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Financial",
+          "subcategory": "Interest Income",
+          "online": false
+        }
+      },
+      {
+        "description": "VANGUARD BUY VFIAX",
+        "category": "INVESTMENT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Investment IRA",
+          "subcategory": "IRA Contributions",
+          "online": false
+        }
+      }
+    ],
+    "personal_income": [
+      {
+        "description": "MOODY'S RISK PAYROLL",
+        "category": "PAYROLL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Income",
+          "subcategory": "Payroll Income",
+          "online": false
+        }
+      },
+      {
+        "description": "UI UEMPLOYMEN BENEFIT",
+        "category": "BENEFITS",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Income",
+          "subcategory": "Unemployment Benefits",
+          "online": false
+        }
+      },
+      {
+        "description": "IRS TREAS 310 TAX REF",
+        "category": "TAX REFUND",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Taxes",
+          "subcategory": "Federal Income Tax",
+          "online": false
+        }
+      }
+    ],
+    "edge_cases": [
+      {
+        "description": "",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "",
+          "subcategory": "",
+          "online": false
+        },
+        "notes": "Empty description should use fallback"
+      },
+      {
+        "description": "UNKNOWN MERCHANT 12345",
+        "category": "",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "",
+          "subcategory": "",
+          "online": false
+        },
+        "notes": "Unknown merchant with no category"
+      },
+      {
+        "description": "AMAZON.COM* WALMART.COM",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": true
+        },
+        "notes": "Multiple keywords - highest priority should win (AMAZON priority 998)"
+      },
+      {
+        "description": "test lowercase merchant",
+        "category": "purchase",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "",
+          "subcategory": "",
+          "online": false
+        },
+        "notes": "Lowercase inputs should be normalized"
+      },
+      {
+        "description": "  AMAZON.COM*  ",
+        "category": "  PURCHASE  ",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": true
+        },
+        "notes": "Whitespace should be trimmed"
+      },
+      {
+        "description": "ZELLE PAYMENT TO MICHAEL",
+        "category": "PAYMENT",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Medical Doctors",
+          "subcategory": "General Practice",
+          "online": false
+        },
+        "notes": "Partial keyword matching"
+      },
+      {
+        "description": "ORIG CO NAME:AMAZON.COM, INC.",
+        "category": "ACH CREDIT",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Business Income",
+          "subcategory": "Amazon FBA",
+          "online": true
+        },
+        "notes": "Special characters and company name formats"
+      }
+    ],
+    "priority_testing": [
+      {
+        "description": "PHR*ENTANDALLERGYASSOCIAT TEST",
+        "category": "MEDICAL",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Health & Wellness",
+          "subcategory": "Allergy Care",
+          "online": false
+        },
+        "notes": "Priority 1000 - highest priority rule"
+      },
+      {
+        "description": "STANDARD ACH PMNTS FEE",
+        "category": "FEE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Bank Fees & Interest",
+          "subcategory": "Transaction Fees",
+          "online": false
+        },
+        "notes": "Priority 1000 - bank fees"
+      },
+      {
+        "description": "RIVERSIDE NISSAN SERVICE",
+        "category": "AUTO",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "Car Maintenance and Repair",
+          "subcategory": "Business",
+          "online": false
+        },
+        "notes": "Priority 999 - very high priority"
+      }
+    ],
+    "online_flag_testing": [
+      {
+        "description": "AMAZON.COM*12345",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": true
+        },
+        "notes": "Online purchase - should have online=true"
+      },
+      {
+        "description": "WALMART.COM ORDER",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": true
+        },
+        "notes": "Online purchase - should have online=true"
+      },
+      {
+        "description": "TARGET 00023812",
+        "category": "PURCHASE",
+        "expected": {
+          "purchase_type": "Business",
+          "category": "General Merchandise",
+          "subcategory": "Online Purchases",
+          "online": false
+        },
+        "notes": "In-store purchase - should have online=false"
+      },
+      {
+        "description": "SHOPRITE LODI",
+        "category": "GROCERY",
+        "expected": {
+          "purchase_type": "Personal",
+          "category": "Grocery",
+          "subcategory": "Supermarket",
+          "online": false
+        },
+        "notes": "In-store grocery - should have online=false"
+      }
+    ]
+  }
+}
